@@ -1,0 +1,109 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	min-width: 1300px;
+	background: url(../images/inquare.gif);
+	background-position: center;
+	background-size: cover;
+}
+.content_inpu{
+	position: relative;
+	width: 65%;
+	margin: 39% auto 0 auto;
+	height: 100px;
+}
+.content_inpu div{
+	float: left;
+	margin-left: 6%;
+}
+.content_inpu input{
+	height: 60px;
+	background: rgba(255,255,255,0);
+	font-size: 22px;
+	color:#ffffff;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+}
+input::-ms-input-placeholder{
+	text-align: center;
+}
+input::-webkit-input-placeholder{
+	text-align: center;
+}
+.con_name{
+	width: 10%;
+}
+.con_name input{
+	width: 100%;
+	text-align: center;
+}
+.con_card{
+	width: 25%;
+}
+.con_card input{
+	width: 100%;
+	text-align: center;
+}
+.con_code{
+	width: 25%;
+}
+.con_code input{
+	width: 60%;
+	padding: 0;
+	border-radius: 5px 0 0 5px;
+	text-align: center;
+	border-right: none;
+	float: left;
+}
+.con_code span{
+	width: 39%;
+	height: 62px;
+	background: rgba(240,233,30,0.8);
+	font-size: 22px;
+	line-height: 60px;
+	color:black;
+	border-radius: 0 5px 5px 0;
+	border:none;
+	display: block;
+	float: right;
+	text-align: center;
+	float: left;
+}
+.content_inpu .con_inqu{
+	width: 14%;
+	height: 60px;
+	cursor: pointer;
+}
+.content_inpu .con_inqu button{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 22px;
+	color: yellow;
+	border: 1px solid #ffffff;
+	border-radius:5px;
+	cursor: pointer;
+	background: #0e7272;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {   
+ /* WebKit browsers */   
+color: #ffffff;   
+}   
+input:-moz-placeholder, textarea:-moz-placeholder {   
+/* Mozilla Firefox 4 to 18 */   
+color: #ffffff;   
+}   
+input::-moz-placeholder, textarea::-moz-placeholder {   
+ /* Mozilla Firefox 19+ */   
+color: #ffffff;   
+}   
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {   
+ /* Internet Explorer 10+ */   
+color: #ffffff;   
+}
