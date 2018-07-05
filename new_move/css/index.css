@@ -71,3 +71,40 @@
 .quick_img a{ color: #000;}
 .quick_img p{ line-height: 0.5rem;}
 .jian{ height: 0.05rem; background: #eaeaea;}
+/*nav导航流光效果*/
+*, *:before, *:after { -webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit; }
+.logo_flash{ position: relative; margin: 0 auto; transition-duration: .5s; }
+.logo_flash{overflow: hidden; }
+.logo_flash:before{
+content:"";
+position: absolute;
+left: -665px;
+top: -460px;
+width: 1000px;
+height: 15px;
+background-color: rgba(255,255,255,.5);
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+-webkit-animation: searchLights 1.5s ease-in 1.5s infinite;
+-o-animation: searchLights 1.5s ease-in 1.5s infinite;
+animation: searchLights 1.5s ease-in 1.5s infinite;
+}
+@-webkit-keyframes searchLights {
+0% { left: -500px; top: 0; }
+to { left: 320px; top: 400px; }
+}
+@-o-keyframes searchLights {
+0% { left: -500px; top: 0; }
+to { left: 320px; top: 400px; }
+}
+@-moz-keyframes searchLights {
+0% { left: -500px; top: 0; }
+to { left: 320px; top: 400px; }
+}
+@keyframes searchLights {
+0% { left: -500px; top: 0; }
+to { left: 320px; top: 400px; }
+}
