@@ -1,0 +1,73 @@
+/*首页*/
+.fix_footer{
+	z-index: 999;
+	height: 2rem;
+	background: #77BFA3;
+	height: 0.9rem;
+	position: fixed;
+}
+.fix_footer div{
+	float: left;
+	line-height: 0.9rem;
+}
+.fix_footer_left{
+	width: 0.8rem;
+	font-size: 0.5rem;
+	color: white;
+	padding-left: 0.2rem;
+	cursor: pointer;
+}
+.fix_footer_middle{
+	width: 5.5rem;
+	text-align: center;
+	font-size: 0.3rem;
+	font-family: "微软雅黑";
+	color: white;
+	font-weight: 600;
+}
+.fix_footer_right{
+	width: 1rem;
+}
+/*nav导航*/
+.sucaihuo-container{
+	z-index: 999;
+}
+.sucaihuo-container .outermost{
+	z-index: 999;
+}
+/*轮播图*/
+.swiper_custom{
+	width: 7.5rem;
+	height: 3.55rem;
+	margin-top:0.9rem;
+	overflow: hidden;
+}
+.swiper-container {
+    width: 7.5rem;
+    height: 3.55rem;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*nav导航*/
+.col-xs-nav{width: 14%; float: left;}
+.quick{ width: 100%; overflow: hidden; margin-bottom:3%;}
+.quick_img{ margin-left: 5%; margin-top:4%; text-align: center; font-size: 0.22rem;}
+.quick_img a{ color: #000;}
+.quick_img p{ line-height: 0.5rem;}
+.jian{ height: 0.05rem; background: #eaeaea;}
