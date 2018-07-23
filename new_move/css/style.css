@@ -16,6 +16,7 @@ time, mark, audio, video {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: "微软雅黑";
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, main {
@@ -44,6 +45,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.content{
+	width: 7.5rem;
+	max-width: 750px;
+}
 .container{
 	width: 100%;
 	max-width: 750px;
@@ -61,3 +66,9 @@ table {
 .fum-img{
 	width: 100%;
 }
+.heione{
+	height: 0.2rem;
+	width: 100%;
+	background: #edecea;
+}
+

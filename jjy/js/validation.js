@@ -21,9 +21,9 @@ $(document).ready(function(){
 
 		if(!flag){
 				alert('请将信息填写完整'); return false;
-		}else if(!phoneReg.test($('.inpu').children('div:eq(9)').find('input').val())){
+		}else if(!phoneReg.test($('.inpu').children('div:eq(12)').find('input').val())){
 				alert('请输入有效的手机号码！'); return false;
-		}else if(!reg.test($('.inpu').children('div:eq(4)').find('input').val())){
+		}else if(!reg.test($('.inpu').children('div:eq(5)').find('input').val())){
 				alert('请输入有效的身份证号！');  return false;
 		}
 		})
