@@ -135,7 +135,7 @@
 }
 .cd-bouncy-nav a::before {
   /* icons */
-  content: '';
+  content:'';
   display: block;
   position: absolute;
   top: 0;
@@ -158,19 +158,24 @@
   background-color: #DC965A;
 }
 .cd-bouncy-nav li:nth-of-type(2) a::before {
-  background-position: -80px 0;
+	background-image: none;
+	content:url(../img/ajc.gif);
 }
 .cd-bouncy-nav li:nth-of-type(3) a::before {
-  background-position: -160px 0;
+	background-image: none;
+  content:url(../img/fj.gif);
 }
 .cd-bouncy-nav li:nth-of-type(4) a::before {
-  background-position: -240px 0;
+  background-image: none;
+  content:url(../img/gt.gif);
 }
 .cd-bouncy-nav li:nth-of-type(5) a::before {
-  background-position: -320px 0;
+  background-image: none;
+  content:url(../img/yl.gif);
 }
 .cd-bouncy-nav li:nth-of-type(6) a::before {
-  background-position: -400px 0;
+  background-image: none;
+  content:url(../img/zh.gif);
 }
 @media only screen and (min-width: 768px) {
   .cd-bouncy-nav {

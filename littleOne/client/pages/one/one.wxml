@@ -1,0 +1,6 @@
+<button type='primary' size='mini' open-type='getUserInfo' >qqq</button>
+<open-data type="groupName" open-gid="xxxxxx"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userGender" lang="zh_CN"></open-data>
+<view></view>
+<button type='primary' size='mini' bindtap="login">点击获取登录</button>

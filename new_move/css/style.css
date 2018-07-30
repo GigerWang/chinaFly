@@ -57,9 +57,9 @@ table {
 .remove_float{
 	clear: both;
 }
-.remove_over{
+/*.remove_over{
 	overflow: hidden;
-}
+}*/
 .outermost{
 	z-index: 999;
 }

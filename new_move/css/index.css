@@ -5,6 +5,7 @@
 	background: #eeeeee;
 	height: 0.9rem;
 	position: fixed;
+	top: 0;
 }
 .fix_footer div{
 	float: left;
@@ -53,7 +54,8 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+  	background-color:rgba(0,0,0,0); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -193,7 +195,7 @@ to { left: 320px; top: 400px; }
 }
 .thth_right a,.tht_right a,.tho_right a{
 	margin-right: 0.1rem;
-	font-size: 0.22rem;
+	font-size: 0.26rem;
 	color: #5f5d5d;
 	white-space:nowrap;
 	line-height: 0.4rem;
@@ -273,10 +275,11 @@ to { left: 320px; top: 400px; }
 	text-align: center;
 	line-height: 0.5rem;
 	margin-top: 0.3rem;
-	-webkit-animation-name: flicker1;
+	font-size: 0.26rem;
+	/*-webkit-animation-name: flicker1;
 	 -webkit-animation-duration: 0.4s;
 	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
+	-webkit-animation-direction: alternate;*/
 }
 .school_but2{
 	width: 1.45rem;
@@ -289,10 +292,11 @@ to { left: 320px; top: 400px; }
 	text-align: center;
 	line-height: 0.5rem;
 	margin-top: 0.27rem;
-	-webkit-animation-name: flicker2; 
+	font-size: 0.26rem;
+	/*-webkit-animation-name: flicker2; 
 	-webkit-animation-duration: 0.4s;
 	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
+	-webkit-animation-direction: alternate;*/
 }
 /*按钮闪动特效*/
 @-webkit-keyframes flicker1{
@@ -311,10 +315,10 @@ to { left: 320px; top: 400px; }
 	to {opacity: 1;}
 }
 .picshan{
-	-webkit-animation-name: picshan1; 
+	/*-webkit-animation-name: picshan1; 
 	-webkit-animation-duration: 0.4s;
 	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
+	-webkit-animation-direction: alternate;*/
 }
 .more_zk{
 	margin-top: 0.27rem;
@@ -372,4 +376,384 @@ to { left: 320px; top: 400px; }
 .tc_right video{
 	width:4.42rem ;
 	height: 3.75rem;
+}
+.fly_co{
+	width: 7.1rem;
+	padding: 0 0.2rem;
+}
+.fly_head{
+	width: 100%;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	border-bottom: 2px solid #fad6eb;
+	background: #f3f3f3;
+	margin-top:0.24rem;
+}
+.fly_head span{
+	margin-left: 0.22rem;
+	font-size: 0.28rem;
+	color:#262525;
+}
+.fly_co > div{
+	float: left;
+}
+.fh_left{
+	width: 3.46rem;
+	position: relative;
+}
+.fh_left img{
+	width: 100%;
+}
+.fh_right{
+	width: 3.63rem;
+}
+.fh_ri_he{
+	width: 3.64rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.fh_ri_he div{
+	float: left;
+}
+.frh_on{
+	width: 0.06rem;
+	height: 0.25rem;
+	background: #f170bc;
+	margin:0.19rem 0.2rem 0 0.2rem;
+}
+.frh_on1{
+	width: 0.06rem;
+	height: 0.25rem;
+	background: #3d99df;
+	margin:0.19rem 0.2rem 0 0.2rem;
+}
+.frh_on2{
+	width: 0.06rem;
+	height: 0.25rem;
+	background: #1eb7b9;
+	margin:0.19rem 0.2rem 0 0.2rem;
+}
+.frh_tit{
+	font-size: 0.26rem;
+	color:#323232;
+}
+.hot img{
+	width: 0.4rem;
+	height: 0.25rem;
+	margin: 0.04rem 0 0 0.05rem;
+}
+.fh_ri_co ul{
+	margin-left: 0.2rem;
+}
+.fh_ri_co li{
+	height: 0.42rem;
+	line-height: 0.42rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.fh_ri_co a{
+	font-size: 0.22rem;
+	color: #5a5959;
+}
+.fh_ri_co .fly_i{
+	font-size:0.28rem;
+	color:#f170bc ;
+	margin-right: 0.12rem;
+}
+.fh_ri_co .fly_i1{
+	font-size:0.28rem;
+	color:#3d99df ;
+	margin-right: 0.12rem;
+}
+.fh_ri_co .fly_i2{
+	font-size:0.28rem;
+	color:#1eb7b9 ;
+	margin-right: 0.12rem;
+}
+.fh_ri_co .fly_ifu{
+	font-size: 0.28rem;
+	color: #bfbfbf;
+	margin-right: 0.12rem;
+}
+.borde_one{
+	width: 7.1rem;
+	margin:0 0.2rem;
+	height: 1px;
+	border-bottom: 1px solid #d4d3d4;
+}
+.swiper_two {
+	width: 90%;
+	margin-left: 5%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+.swiper-slide_class {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: block;
+    background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+  	background-color:rgba(0,0,0,0); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+  	-webkit-transition: transform 1.0s;
+	-moz-transition: transform 1.0s;
+	-ms-transition: transform 1.0s;
+	-o-transition: transform 1.0s;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+.swiper-slide_class div{
+	width: 95%;
+	margin: 2.5%;
+	background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+  	background-color:rgba(0,0,0,0); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+}
+.swiper-slide_class div img{
+	width: 100%;
+}
+
+.swiper-slide_class p{
+	font-size: 0.2rem;
+	color: #262525;
+}
+.fly_bo{
+	padding: 0.2rem 0 0.3rem 0;
+}
+.school_tab{
+	margin-top: 0.13rem;
+	width: 7.1rem;
+	padding: 0 0.2rem;
+}
+.school_tab>div{
+	float: left;
+}
+.scta_left{
+	border: 0.01rem solid #9164f1;
+	width: 3.2rem;
+	height: 5.5rem;
+}
+.scta_ri{
+	margin-left: 0.16rem;
+	border: 0.01rem solid #e0dddf;
+	box-shadow:0px 0px 30px 2px #ededeb;
+	border-radius: 5px;
+	width: 3.65rem;
+	height: 5.5rem;
+}
+.sc_ch{
+	width: 3.04rem;
+	height: 0.75rem;
+	line-height: 0.75rem;
+	background: #f8f8f8;
+	margin-left: 0.09rem;
+	margin-top: 0.14rem;
+	text-align: center;
+	cursor: pointer;
+}
+.sc_chfu{
+	background: linear-gradient(to top right, #dc45b6 , #9263f0);
+}
+.sc_ch span{
+	color:#5b5b5b;
+	font-size:0.26rem
+}
+.sc_chfu span{
+	color:white;
+}
+.student1{
+	text-align: center;
+}
+.student1 img:first-child{
+	width: 2.20rem;
+	height: 2.15rem;
+	margin-top: 0.32rem;
+	border-radius: 200px;
+}
+.student1 img:last-child{
+	width: 1.9rem;
+	height: 0.4rem;
+	margin-top: 0.15rem;
+}
+.stu_name{
+	margin: 0.15rem 0 0.15rem 0;
+}
+.stu_name span:first-child{
+	font-size: 0.3rem;
+	color:#9263f1;
+}
+.stu_name span:last-child{
+	font-size: 0.22rem;
+	color: #9b9a9b;
+}
+.student1 p{
+	padding-left: 0.3rem;
+	font-size: 0.2rem;
+	width: 3.1rem;
+	color:#5b5a5b;
+	line-height: 0.32rem;
+	text-align: left;
+}
+.special{
+	margin-top: 0.23rem;
+	margin-bottom: 0.18rem;
+}
+.guarantee{
+	background-image: url(../images/index/back_guarantee.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 7.5rem;
+	height: 3.98rem;
+}
+.swiper_three {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-top: 1.6rem;
+	padding-bottom: 0.3rem;
+}
+.swiper-slide1-active1{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.hezuo1{
+	width: 100%;
+	height: 3rem;
+	background-image: url(../images/index/back_hang1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+
+.school_aaa{
+	overflow: hidden;
+	padding-top: 1.15rem;
+}
+.scaa_chil{
+	width: 21.5%;
+	margin-left: 2.8%;
+	float: left;
+	margin-top: 0.2rem;
+}
+.ts{
+	padding: 0.28rem 0.37rem 0 0.47rem ;
+	width: 6.66rem;
+}
+.tongz span{
+	font-size: 0.26rem;
+	color:#101010;
+	margin-bottom: 0.13rem;
+	display: block;
+}
+.tongz p{
+	font-size: 0.21rem;
+	color:#101010;
+	line-height: 0.35rem;
+	margin-bottom: 0.3rem;
+	letter-spacing: 0.02rem;
+}
+.shengm span{
+	font-size: 0.26rem;
+	color:#e61a1a;
+	margin-bottom: 0.13rem;
+	display: block;
+}
+.shengm p{
+	font-size: 0.21rem;
+	color:#e61a1a;
+	line-height: 0.35rem;
+	letter-spacing: 0.02rem;
+}
+.bm_back{
+	width: 7.5rem;
+	height: 10.54rem;
+	margin-top: 0.4rem;
+	background-image: url(../images/index/back_bm.jpg);
+	background-position: center;
+	background-size: cover;
+}
+/*报名*/
+.bmbm{
+	width: 6.8rem;
+	margin: 0 0.4rem 0 0.3rem;
+	padding-top: 2.6rem;
+	height: auto;
+}
+.bmbm_ch{
+	height: 0.7rem;
+	width: 100%;
+	margin-bottom: 0.2rem;
+}
+.bmch_le{
+	width: 1.4rem;
+	height: 0.7rem;
+	float: left;
+}
+.bmch_le span{
+	display: block;
+	text-align: center;
+	line-height: 0.7rem;
+	font-size: 0.3rem;
+	color: white;
+}
+.bmch_ri{
+	width: 5.4rem;
+	height: 0.7rem;
+	float: left;
+}
+.bmch_ri input{
+	border: none;
+	border-radius: 10px;
+	background: white;
+	width: 95%;
+	padding-left:5%;
+	height: 0.7rem;
+	margin: 0;
+	color:#757575;
+   font-size: 0.24rem;
+   letter-spacing: 0.04rem;
+   padding-left: 0.3rem;
+}
+.sele{
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: 10px;
+	background: white;
+	width: 95%;
+	padding-left:5%;
+	height: 0.7rem;
+	margin: 0;
+	color:#757575;
+   font-size: 0.24rem;
+   letter-spacing: 0.04rem;
+}
+input::-webkit-input-placeholder {
+       color:#757575;
+       font-size: 0.24rem;
+       letter-spacing: 0.04rem;
+       padding-left: 0.1rem;
+}
+.bmch_ri .sub{
+	width: 100%;
+	height: 0.8rem;
+	font-size: 0.34rem;
+	padding: 0;
+}
+/*底部导航*/
+.footer_n{font-size: 0.24rem; text-align: center;width: 7.5rem;z-index: 999;}
+.footer_left{ height: 1.3rem;  background:#eeeeee; display: flex;align-items:center;ustify-content:center;flex-direction:column;}
+.footer_left p{text-align:center;color: #939292;font-size: 0.24rem;}
+.col-xs-3{
+	width: 25%
+}
+.footer_n div{
+	float: left;
+}
+.footer_left .more_i{
+	font-size: 0.6rem;
+	color: #939292;
+	
+	margin-top: 0.18rem;
 }

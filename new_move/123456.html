@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<script type="text/javascript" src="js_other/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js_other/text_overflow.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="container" >
+	<div class="xxjs_more">
+		<p>上海交通大学继续教育学院创办于1896年，是我国历史最悠久、享誉海内外的高等学府。学校现有徐汇、闵行、黄浦、长宁、七宝等校区，总占地面积近五千余亩。上海交通大学继续教育学院一直以来以培养高素质人才、服务社会为己任，为国家的发展和腾飞做出了积极贡献。</p>
+		<p>近年来，我国职业教育事业发展迅速，各级政府和领导非常重视，培养体系正在不断完善，已经培养了大批中高级技能型人才，为提高劳动者素质、促进学生就业，推动社会经济发展做出了重要贡献。</p>
+		<p>上海交通大学继续教育学院航空服务精英班是为了满足国内外航空服务人才的社会需求而专门推出的非学历培训项目。我非常高兴地看到，同学们经过在校严格的专业理论学习和实训实践，顺利地走上理想的工作岗位，获得用人单位上海交通大学继续教育学院航空服务精英班是为了满足国内外航空服务人才的社会需求而专门推出的非学历培训项目。我非常高兴地看到，同学们经过在校严格的专业理论学习和实训实践，顺利地走上理想的工作岗位，获得用人单位。	</p>
+		
+	</div>
+	<div class="xxjszk">
+	【详情】
+	</div>
+</div>
+
+<script type="text/javascript">
+		$(function(){
+			
+		$(".xxjszk").click(function(){
+
+			$(".xxjs_more").attr("displayLength","500");
+
+			$(".xxjs_more").un_displayPart();
+
+		})
+
+	})
+</script>
+</body>
+</html>
