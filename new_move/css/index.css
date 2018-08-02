@@ -504,6 +504,18 @@ to { left: 320px; top: 400px; }
 	-webkit-transform: scale(0.9);
 	transform: scale(0.9);
 }
+.swiper_three .swiper-wrapper .swiper-slide_class{
+	-webkit-transition: transform 1.0s;
+	-moz-transition: transform 1.0s;
+	-ms-transition: transform 1.0s;
+	-o-transition: transform 1.0s;
+	transition: transform 1.0s;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);  
+	-o-transform: scale(0.9);  
+	transform: scale(0.9);
+}
 .swiper-slide_class div{
 	width: 95%;
 	margin: 2.5%;
@@ -613,8 +625,11 @@ to { left: 320px; top: 400px; }
 	padding-top: 1.6rem;
 	padding-bottom: 0.3rem;
 }
-.swiper-slide1-active1{
+.swiper_three .swiper-wrapper .swiper-slide1-active1{
 	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);  
+	-o-transform: scale(1.1);  
 	transform: scale(1.1);
 }
 .hezuo1{
@@ -624,8 +639,6 @@ to { left: 320px; top: 400px; }
 	background-position: center;
 	background-size: cover;
 }
-
-
 .school_aaa{
 	overflow: hidden;
 	padding-top: 1.15rem;

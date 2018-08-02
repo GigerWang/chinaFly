@@ -4,7 +4,7 @@
     
     <link rel="stylesheet" href="css_other/swiper.min.css">
     <script type="text/javascript" src="js_other/swiper.min.js"></script>
-    
+    <script type="text/javascript" src="js_other/jquery-1.7.2.min.js"></script>
     <style>
 .swiper-container {
 	width: 100%;
@@ -58,7 +58,8 @@
             <div class="swiper-slide aaa" ><a href="#">777777</a></div>
         </div>
     </div>
-    <!-- Swiper JS -->
+    <div class="tip" style="display: none;"> <div class="content">AAAAAA</div></div>
+	    <!-- Swiper JS -->
     <script>
     var swiper = new Swiper('.swiper-container',{
 		autoplay:1000,
@@ -68,6 +69,17 @@
 		centeredSlides : true,
 		slidesPerView:3
 		});
+(function(){
+window.alert = function(name){
+var iframe = document.createElement("IFRAME");
+iframe.style.display="none";
+iframe.setAttribute("src", 'data:text/plain');
+document.documentElement.appendChild(iframe);
+window.frames[0].window.alert(name);
+iframe.parentNode.removeChild(iframe);
+}
+})();
+alert('试一试');
     </script>
 
 </body></html>
