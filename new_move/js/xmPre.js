@@ -44,6 +44,7 @@ var swiper = new Swiper('.swiper-toproll', {
     autoplay:2000,
     slideActiveClass : 'toproll-active',
     speed:300,
+    autoplayDisableOnInteraction : false
 //	slideClass : 'swiper-slide1'
 });
 //学校首页学校简介查看更多
@@ -56,7 +57,7 @@ $(function(){
 		if($('.xxjz_jjmore').html().indexOf('查看更多')!=-1){
 			$('.xxjz_jjmore').html('【点击收起】');
 			$('.xxjz_jjcon').css({'background':'none','height':'auto'});
-			$('.xxjz_jjmore').css('bottom','0');
+			$('.xxjz_jjmore').css('bottom','0.05rem');
 		}else{
 			$('.xxjz_jjmore').html('【查看更多】');
 			$('.xxjz_jjcon').removeAttr('style');

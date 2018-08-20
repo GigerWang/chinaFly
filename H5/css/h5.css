@@ -1,0 +1,483 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+p,h1,h2,h3,h4,ul,li{
+	padding: 0;
+	margin: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*-webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;*/
+    align-items: center;
+    flex-direction:column;
+    /*-webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;*/
+}
+.container{
+	max-width: 750px;
+	width: 7.5rem;
+}
+.guarantee{
+	background-image: url(../images/index/back_guarantee.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 7.5rem;
+	height: 3.98rem;
+}
+.container{
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+}
+.swiper_three .swiper-wrapper .swiper-slide_class{
+	-webkit-transition: transform 1.0s;
+	-moz-transition: transform 1.0s;
+	-ms-transition: transform 1.0s;
+	-o-transition: transform 1.0s;
+	transition: transform 1.0s;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);  
+	-o-transform: scale(0.9);  
+	transform: scale(0.9);
+}
+.swiper_three .swiper-wrapper .swiper-slide_class{
+	-webkit-transition: transform 1.0s;
+	-moz-transition: transform 1.0s;
+	-ms-transition: transform 1.0s;
+	-o-transition: transform 1.0s;
+	transition: transform 1.0s;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);  
+	-o-transform: scale(0.9);  
+	transform: scale(0.9);
+}
+.swiper_three>.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+  	background-color:rgba(0,0,0,0); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide_class {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: block;
+    background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+  	background-color:rgba(0,0,0,0); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+  	-webkit-transition: transform 1.0s;
+	-moz-transition: transform 1.0s;
+	-ms-transition: transform 1.0s;
+	-o-transition: transform 1.0s;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+.swiper-slide_class div{
+	width: 95%;
+	margin: 2.5%;
+	background-color:#000000;/* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+  	background-color:rgba(0,0,0,0); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+}
+.swiper-slide_class div img{
+	width: 100%;
+}
+
+.swiper-slide_class p{
+	font-size: 0.2rem;
+	color: #262525;
+}
+.swiper_three .swiper-wrapper .swiper-slide1-active1{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);  
+	-o-transform: scale(1.1);  
+	transform: scale(1.1);
+}
+.com-img{
+	width: 100%;
+	float: left;
+}
+/*首页*/
+.h5one_bac{
+	background-image: url(../images/sy1/H5one_back.png);
+	background-position: center;
+	background-size: cover;
+}
+.h5one_head{
+	width: 3.9rem;
+	height: 1.2rem;
+	margin-top: 2.75rem;
+}
+.h5one_headfu{
+	width: 6.2rem;
+	height: 1rem;
+	margin-top: 0.3rem;
+}
+.h5one_peo{
+	width: 7.5rem;
+	height: 7.5rem;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+/*向下箭头*/
+
+.breathe-btn{
+	position: absolute;
+	bottom: 0;
+	width: 1rem;
+	height: 1rem;
+	border-radius:5px; color:#fff;
+	background-image:
+	-webkit-gradient(linear, left top, left bottom, from(#489286), to(#28413d));
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name: breathe;
+    -webkit-animation-duration: 1200ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes breathe {
+    0% { opacity: 0; box-shadow:0 1px 2px rgba(255,255,255,0.1);}
+    100% { opacity: 1;box-shadow:0 1px 30px rgba(36,58,55,.8);}
+}
+/*怎么办第二页*/
+.h5one_do{
+	background-image: url(../images/whatdo2/general_back.png);
+	background-position: center;
+	background-size: cover;
+}
+.h5two_1{
+	width: 100%;
+	height: 0.78rem;
+	margin-top: 0.7rem;
+}
+.h5two_2{
+	margin-top: 0.5rem;
+}
+.h5two_2 p{
+	font-size: 0.27rem;
+	color: white;
+	padding: 0 0.5rem;
+	line-height: 0.48rem;
+	text-align: left;
+	font-family: "微软雅黑";
+}
+.h5two_3{
+	margin-top: 0.3rem;
+}
+.h5two_3 p{
+	font-size: 0.3rem;
+	font-weight: 600;
+	font-family: "微软雅黑";
+	color: white;
+}
+.h5two_4,.h5two_5,.h5two_6{
+	margin-top: 0.28rem;
+}
+/*第三页,学习空乘能带来什么*/
+
+.h5three_bri{
+	background-image: url(../images/whatdo2/general_back.png);
+	background-position: center;
+	background-size: cover;	
+}
+.h5three_head{
+	margin-top: 0.54rem;
+}
+.h5three_1{
+	margin-top: 0.56rem;
+}
+.h5three_2,.h5three_3,.h5three_4{
+	margin-top: 0.3rem;
+}
+.h5three_5{
+	margin-top: 1.05rem;
+}
+.h5three_6,.h5three_7,.h5three_8{
+	margin-top: 0.5rem;
+}
+/*第四页,职业通行证*/
+.h5one_job{
+	background-image: url(../images/whatdo2/general_back.png);
+	background-position: center;
+	background-size: cover;		
+}
+.h5four_1{
+	width: 100%;
+	height: 0.78rem;
+	margin-top: 0.7rem;
+}
+.h5four_2{
+	margin-top: 0.8rem;
+}
+.h5four_2 p{
+	font-size: 0.3rem;
+	font-weight: 600;
+	font-family: "微软雅黑";
+	color: white;
+	line-height: 0.3rem;
+}
+.h5four_3{
+	margin-top: 0.4rem;
+}
+.h5four_3 p{
+	font-size: 0.24rem;
+	color: white;
+	padding: 0 0.5rem;
+	line-height: 0.41rem;
+	text-align: left;
+	font-family: "微软雅黑";
+}
+.h5four_4{
+	margin-top: 0.46rem;
+}
+.h5four_5{
+	margin-top: 0.31rem;
+}
+/*优秀学员*/
+.h5five_jun{
+	background-image: url(../images/whatdo2/general_back.png);
+	background-position: center;
+	background-size: cover;	
+}
+.h5five_1{
+	width: 100%;
+	height: 0.78rem;
+	margin-top: 0.7rem;
+}
+.swipchil div p{
+	font-family: "微软雅黑";
+	color: white;
+	padding: 0 0.5rem;
+}
+.swipchil div p:nth-child(1){
+	font-size: 0.34rem;
+	letter-spacing: 0.1rem;
+}
+.swipchil div p:nth-child(2){
+	font-size: 0.3rem;
+	margin-top: 0.2rem;
+}
+.swipchil div p:nth-child(3){
+	font-size: 0.26rem;
+	text-align: left;
+	line-height: 0.5rem;
+	margin-top: 0.15rem;
+	display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;
+}
+.h5five_2{
+	width: 100%;
+	height: 0.91rem;
+	position: absolute;
+	bottom: 1.5rem;
+}
+/*条件*/
+.h5six_cond{
+	background-image: url(../images/whatdo2/general_back.png);
+	background-position: center;
+	background-size: cover;		
+}
+.h5six_1{
+	width: 100%;
+	height: 0.78rem;
+	margin-top: 0.7rem;
+}
+.h5six_2{
+	margin-top: 1.1rem;
+}
+.h5six_3{
+	
+}
+.h5six_3 p{
+	font-size: 0.27rem;
+	line-height: 0.3775rem;
+	color: white;
+	text-align: left;
+	padding: 0.4rem 0.6rem 0.4rem 0.35rem;
+}
+.h5six_5 p{
+	font-size: 0.27rem;
+	line-height: 0.4379rem;
+	color: white;
+	text-align: left;
+	padding: 0.4rem 0.6rem 0.4rem 0.35rem;
+}
+/*第七页,重点大学*/
+.h5seven_school{
+	background-image: url(../images/whatdo2/general_back.png);
+	background-position: center;
+	background-size: cover;		
+}
+.h5seven_1{
+	width: 100%;
+	height: 0.78rem;
+	margin-top: 0.7rem;
+}
+.h5seven_2{
+	width: 6.9rem;
+	padding: 0 0.3rem;
+	margin-top: 0.24rem;
+	padding-bottom: 0.26rem;
+	border-bottom: 1px solid #859290;
+}
+.h5seven_2>div{
+	float: left;
+}
+.seven_2left{
+	width: 2.25rem;
+	height: 1.82rem;
+}
+.seven_2center>div span,.seven_2center>div img{
+	float: left;
+}
+.seven_2center{
+	margin-left: 0.24rem;
+	width: 2.8rem;
+	margin-top: 0.25rem;
+}
+.seven_2center>div img{
+	width: 0.27rem;
+	margin-left: 0.12rem;
+	margin-top: 0.05rem;
+}
+.seven_2center>div span{
+	font-size: 0.32rem;
+	line-height: 0.32rem;
+	color: white;
+}
+.seven_2center>div p{
+	display: block;
+	font-size: 0.2rem;
+	line-height: 0.34rem;
+	color: #fdf9f9;
+	font-weight: 300;
+	letter-spacing: 0.02rem;
+	text-align: left;
+	margin-top:0.3rem;
+}
+.seven_2center>div {
+	overflow: hidden;
+}
+.h5seven_2 .seven_2right{
+	float: right;
+}
+.seven_2right>a{
+	display: block;
+	width: 1.47rem;
+	height: 0.51rem;
+	text-decoration: none;
+	color: white;
+	font-size: 0.256rem;
+	line-height: 0.51rem;
+	border-radius: 8px;
+	border: 1px solid #fff;
+}
+.seven_2right>a:first-child{
+	margin-top: 0.6rem;
+}
+.seven_2right>a:last-child{
+	margin-top: 0.19rem;
+	background: white;
+	color: #294540;
+}
+/*第八页报名页*/
+.h5eight_bm{
+	background-image: url(../images/whatdo2/general_back.png);
+	background-position: center;
+	background-size: cover;	
+}
+.h5eight_1{
+	width: 100%;
+	height: 0.78rem;
+	margin-top: 0.7rem;	
+}
+.h5eight_2{
+	margin-top: 0.75rem;
+	padding: 0 0.7rem 0 0.75rem;
+}
+.h5eight_2 p{
+	font-size: 0.2rem;
+	line-height: 0.36rem;
+	color: white;
+	text-align: left;
+}
+.h5eight_3{
+	margin-top: 0.28rem;
+	width: 5.9rem;
+}
+.h5eight_3 input{
+	width: 100%;
+	height: 0.9rem;
+	border: 1px solid white;
+	border-radius: 50px;
+	background: rgba(0,0,0,0);
+}
+input::-webkit-input-placeholder{
+    color:white;
+    font-size: 0.3rem;
+    padding-left: 0.5rem;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:white;
+    font-size: 0.2rem;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:white;
+    font-size: 0.2rem;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:white;
+    font-size: 0.2rem;
+}
+.h5eight_4{
+	margin-top: 0.28rem;
+	width: 5.9rem;
+}
+.h5eight_4 input{
+	width: 100%;
+	height: 0.9rem;
+	border: 1px solid white;
+	border-radius: 50px;
+	background: white;
+	font-size: 0.4rem;
+	color: #2b4843;
+}

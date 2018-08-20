@@ -56,3 +56,10 @@ $(document).ready(function(){
 		$(this).parent('div').siblings('.scta_ri').children('.student1').eq($(this).index()).fadeIn(200);
 	})
 })
+//点击搜索显示隐藏
+$(document).ready(function(){
+	$('.fix_footer_right').click(function(){
+		$('.index_search').slideToggle(500);
+	})
+})
+
