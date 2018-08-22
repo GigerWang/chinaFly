@@ -1256,3 +1256,101 @@ input::-webkit-input-placeholder {
 	left: 1.52rem;
 	top: 6.55rem;
 }
+/*课程专题页*/
+.kec_on{
+	background: #58bbff;
+	overflow: hidden;
+}
+.kec_con{
+	width: 6.9rem;
+	margin-left: 0.3rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	overflow: hidden;
+}
+.kec_con>div{
+	float: left;
+}
+.kec_con_spl img{
+	width: 2.84rem;
+	height: 3.88rem;
+	float: left;
+}
+.kec_con_spr{
+	width: 4.06rem;
+	height: 3.88rem;
+	background: #e6f4ff;
+}
+.kec_con_spr p{
+	float: left;
+	width: 2.95rem;
+	border: 1px solid #abd8fc;
+	margin-left: 0.24rem;
+	margin-top: 0.42rem;
+	padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+}
+.kec_con_spr p span:first-child{
+	font-size: 0.3rem;
+	line-height: 0.46rem;
+	color: #323232;
+}
+.kec_con_spr p span:last-child{
+	font-size: 0.26rem;
+	line-height: 0.46rem;
+	color: #666666;
+}
+.kec_cont1{
+	background: #eef3fa;
+	overflow: hidden;
+}
+.kec_conc{
+	width: 6.9rem;
+	margin-left: 0.3rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	overflow: hidden;	
+	background: #fff;
+}
+.kec_concl{
+	width: 2.96rem;
+	height: 5.2rem;
+}
+.kec_concl img{
+	float: left;
+	width: 2.96rem;
+	height: 5.2rem;
+}
+.kec_concr{
+	width: 3.94rem;
+}
+.kec_concr p{
+	font-size: 0.26rem;
+	line-height: 0.4rem;
+	color: #323232;
+	text-indent: 2em;
+	padding: 0.3rem 0.2rem 0 0.25rem;
+}
+.kec_conc>div{
+	float: left;
+}
+.kec_zjc{
+	width: 6.9rem;
+	height: 1.14rem;
+	background: #aeacff;
+	font-size: 0.26rem;
+	line-height: 0.42rem;
+	color: white;
+	text-align: center;
+	padding-top: 0.3rem;
+}
+.kec_concl{
+	position: relative;
+}
+.kec_concl a{
+	display: block;
+	position: absolute;
+	width: 1.3rem;
+	height: 0.4rem;
+	left: 0.85rem;
+	bottom: 0.55rem;
+}
