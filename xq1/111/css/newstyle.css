@@ -1,0 +1,135 @@
+/* Author:panya Version:1.0  Date:2015/5/13 */
+
+/* CSS reset */
+body{font:14px "宋体",Tahoma,Helvetica,san-serif;background:url(../images/bj-4.jpg)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/bj-4.jpg*/ repeat-x left 149px;color:#444;}
+body,div,p,form,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+img{border:0;}
+ul,ol{list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+a:link{color:#444;text-decoration:none;outline: none;}
+a:hover {color: #000;}
+
+/* content */
+ #content{margin:0 auto;width:1003px;background-color:#fff;overflow:hidden;zoom:1;}
+
+/* quicknav */
+ .quicknav{height:330px;font-family:Microsoft YaHei,arial,verdana,sans-serif;overflow:hidden;zoom:1;}
+ .quicknav .left{float:left;width:208px;height:330px;background:#0B93FE url(../images/quicknavbg.png)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/quicknavbg.png*/ repeat-x left top;overflow:hidden;zoom:1;}
+ .quicknav .left .nav{height:38px;line-height:36px;color:#fff;font-size:14px;font-family:Microsoft YaHei,arial,verdana,sans-serif;}
+ .quicknav .left .nav .select{background:url(../images/quicknavtitle.png)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/quicknavtitle.png*/ repeat-x left top;font-weight:bold;}
+ .quicknav .left .nav a{display:block;float:left;width:50%;text-align:center;color:#fff;}
+
+ .quicknav .left ul{margin:10px 15px;overflow:hidden;zoom:1;}
+ .quicknav .left ul li{height:40px;line-height:40px;border-bottom:1px solid #74BAF6;}
+ .quicknav .left ul li a{display:block;font-size:16px;color:#fff;}
+ .quicknav .left ul li a img{float:left;margin:6px 8px 0 18px;}
+ .quicknav .left ul li a:hover,.quicknav .left ul .select{background-color:#0175D4;}
+ .quicknav .left .nav2 li{padding:6px 0;}
+
+ .quicknav .right{float:right;width:795px;height:330px;overflow:hidden;zoom:1;}
+
+/* allsearch */
+ .allsearch{background-color:#286FB7;height:40px;line-height:40px;font-family:Microsoft YaHei,arial,verdana,sans-serif;overflow:hidden;zoom:1;}
+ .allsearch .search{float:left;margin:0 10px;}
+ .allsearch .search span{float:left;margin-left:10px;color:#fff;font-size:15px;}
+ .allsearch .search div{float:left;margin:7px 0 0 5px;background-color:#fff;}
+ .allsearch .search div input{border:none;width:190px;}
+ .allsearch ul{float:left;overflow:hidden;zoom:1;}
+ .allsearch ul li{float:left;margin:0 22px;display:inline;}
+ .allsearch ul li a{color:#fff;}
+ .allsearch ul li a img{margin-right:12px;}
+
+/* section */
+ .section{margin-top:15px;overflow:hidden;zoom:1;}
+ .section .left-01{float:left;width:320px;overflow:hidden;zoom:1;}
+ .section .left-01 ul{margin:0 10px;overflow:hidden;zoom:1;}
+ .section .left-01 li,.section .middle-01 li{height:38px;line-height:38px;background:url(../images/dd.jpg)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/dd.jpg*/ repeat-x left bottom;}
+ .section .left-01 li a,.section .middle-01 li a{padding-left:15px;background:url(../images/icon-17.png)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/icon-17.png*/ no-repeat 5px center;font-family:arial,verdana,sans-serif;font-size:12px;}
+ .section .left-01 li a:hover,.section .middle-01 li a:hover{color:#286FB7;text-decoration:underline;}
+
+ .section .left-02{float:left;margin-left:20px;width:640px;}
+ .section .left-02 ul{margin:15px;overflow:hidden;zoom:1;}
+ .section .left-02 li{float:left;margin:8px 0;width:100px;text-align:center;line-height:16px;border-right:1px solid #999;font-size:14px;}
+ .section .left-02 a:hover{color:#286FB7;text-decoration:underline;}
+ .section .left-02 .bornone{border:none;}
+
+ .title-01{border-bottom:2px solid #ccc;font-family:Microsoft YaHei,arial,verdana,sans-serif;overflow:hidden;zoom:1;}
+ .title-01 span{display:block;float:left;padding:8px 20px;font-size:16px;color:#fff;}
+ .title-01 .select{background-color:#286FB7;}
+ .title-01 .select a{color:#fff;}
+ .title-01 .more{float:right;margin-top:10px;padding-right:10px;}
+
+
+ .cont-01{margin:10px;overflow:hidden;zoom:1; }
+
+ .section .middle-01{float:left;width:350px;margin-left:15px;}
+ .section .middle-01 li{height:28px;line-height:28px;}
+ .section .middle-01 p{height:210px;width:350px;overflow:hidden;zoom:1;}
+
+ .section .right-01{float:right;width:300px;}
+ .section .right-01 .article{width:100%;margin-top:10px;padding-top:6px;padding-bottom:12px;background:url(../images/dd.jpg)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/dd.jpg*/ repeat-x left bottom;overflow:hidden;zoom:1;}
+ .section .right-01 .article .data-01{float:left;width:74px;height:70px;background:url(../images/databg.jpg)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/databg.jpg*/ no-repeat left top;}
+ .section .right-01 .article .data-01 h5{height:20px;line-height:20px;text-align:center;color:#fff;font-weight:normal;}
+ .section .right-01 .article .data-01 h1{line-height:43px;color:#000;text-align:center;font-family:arial,verdana,sans-serif;font-weight:normal;}
+ .section .right-01 .article .info-01{float:right;width:200px;color:#888;}
+ .section .right-01 .article .info-01 a{display:block;float:left;margin-bottom:5px;width:100%;font-weight:bold;color:#276EB7;font-size:12px;}
+ .section .right-01 .article .info-01 a:hover{color:#000;text-decoration:underline;}
+ .section .right-01 .article .info-01 p{float:left;height:18px;margin-right:5px;padding:2px 0;padding-left:22px;font-size:12px;line-height:18px;}
+ .section .right-01 .article .info-01 .name{background:url(../images/icon-18.png)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/icon-18.png*/ no-repeat left center;}
+ .section .right-01 .article .info-01 .time{background:url(../images/icon-19.png)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/icon-19.png*/ no-repeat left center;}
+ .section .right-01 .article .info-01 .place{background:url(../images/icon-20.png)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/icon-20.png*/ no-repeat left center;}
+
+
+ .gonggao-list{width:300px;overflow:hidden;zoom:1;}
+ .gonggao-list .gonggao-li{height:38px;line-height:38px;background:url(../images/dd.jpg)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/dd.jpg*/ repeat-x left bottom;}
+ .gonggao-list .gonggao-li a{padding-left:15px;background:url(../images/icon-17.png)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/icon-17.png*/ no-repeat 5px center;font-family:arial,verdana,sans-serif;font-size:12px;}
+ .gonggao-list .gonggao-li a:hover{color:#286FB7;text-decoration:underline;}
+
+
+
+ .section .right-02{margin-right:20px;}
+ .section .right-02 .sinav{width:277px;height:28px;line-height:28px;border:1px solid #ccc;overflow:hidden;zoom:1;}
+ .section .right-02 .sinav #bo{border-left:1px solid #ccc;}
+ .section .right-02 .sinav a{display:block;float:left;width:138px;text-align:center;font-family:Microsoft YaHei,arial,verdana,sans-serif;color:#777;}
+ .section .right-02 .sinav .select{background-color:#eee;font-weight:bold;}
+ .section .right-02 ul{margin:5px 0;overflow:hidden;zoom:1;}
+ .section .right-02 li{height:40px;line-height:40px;background:url(../images/dd.jpg)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/dd.jpg*/ repeat-x left bottom;}
+ .section .right-02 ul a{padding-left:15px;font-size:12px;background:url(../images/icon-17.png)/*tpa=http://www.dlu.edu.cn/dfiles/9808/images/icon-17.png*/ no-repeat left center;}
+ .section .right-02 ul a:hover{color:#286FB7;text-decoration:underline;}
+
+ /* quicklink */
+  .quicklink{margin:10px 0;overflow:hidden;zoom:1;}
+  .quicklink img{padding:0 3px;width:325px;height:90px;}
+
+ /* picshow */
+  .picshow{margin:0 20px;overflow:hidden;zoom:1;}
+  .picshow .cont-03{margin:18px 0 0 0;overflow:hidden;zoom:1;}
+  .picshow .cont-03 a{float:left;padding:40px 0;}
+  .picshow .cont-03 ul{float:left;margin:0 10px;width:920px;overflow:hidden;zoom:1;}
+  .picshow .cont-03 li{float:left;margin:0 5px;text-align:center;font-size:12px;line-height:28px;}
+  .picshow .cont-03 li a{margin:0;padding:0;}
+  .picshow .cont-03 li a:hover{color:#286FB7;text-decoration:underline;}
+
+/* footer */
+ #footer{margin-top:10px;padding-top:5px;width:100%;height:85px;background-color:#286FB7;font-size:12px;line-height:22px;}
+ 
+ 
+ .demo {
+	height: 134px; width: 100%; position: relative; clear: both
+;}
+.bx_wrap {
+	overflow: hidden; height: 134px; margin-left: 0px
+;}
+.bx_wrap UL IMG {}
+.bx_wrap UL LI {
+	width: 132px; text-align: center; line-height: 25px
+;}
+.bx_wrap UL LI A:hover {
+	text-decoration: none; color: #286fb7
+;}
+.bx_wrap A.prev {
+	height: 24px; width: 20px;  position: absolute; outline-width: 0px; outline-style: none; left: -20px; line-height: 24px; top: 51px; text-indent: -999em
+;}
+.bx_wrap A.next {
+	height: 24px; width: 20px;  position: absolute; left: 557px; line-height: 24px; top: 51px; text-indent: -999em
+;}
