@@ -170,3 +170,24 @@ $(document).ready(function(){
 
 	})
 });
+//专委会查看更多
+$(document).ready(function(){
+	$('#zwh_more').click(function(){
+		if($(this).html().indexOf('更多')!=-1){
+			$(this).html('【点击收起】');
+			$('.zwh_sqp').removeClass('zwh_over');
+		}else{
+			$(this).html('【查看更多】');
+			$('.zwh_sqp').addClass('zwh_over');
+	}
+	});
+	$('#zwh_more1').click(function(){
+		if($(this).html().indexOf('更多')!=-1){
+			$(this).html('【点击收起】');
+			$('.zwh_sqp1').removeClass('zwh_over1');
+		}else{
+			$(this).html('【查看更多】');
+			$('.zwh_sqp1').addClass('zwh_over1');
+	}
+	})
+});

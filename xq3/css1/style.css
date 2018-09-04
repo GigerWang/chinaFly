@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+html{background:#FFF;}
+body{font-size:63%;/*font-family:"\5FAE\8F6F\96C5\9ED1", SimSun;*/background-color:#fff;color: #444;font-family:'Microsoft YaHei',SimSun,SimHei ,"STHeiti Light",STHeiti,"Lucida Grande", Tahoma,Arial, Helvetica, sans-serif;}
+html,body,address,blockquote,div,dl,form,h1,h2,h3,h4,h5,h6,ol,p,pre,table,ul,dd,dl,dt,li,tbody,td,tfoot,th,thead,tr,button,del,ins,map,object,a,abbr,acronym,b,bdo,big,br,cite,code,dfn,em,i,img,kbd,q,samp,small,span,strong,sub,sup,tt,var,legend,fieldset{margin:0px;padding:0px;color: #323232; -webkit-font-smoothing: subpixel-antialiased;}
+table{border-collapse:collapse;border-spacing:0;width:100%;}
+fieldset,img{border:0;}
+img,object{max-width:100%;/*height:auto;*/width:auto\9;/* for ie8 */-ms-interpolation-mode: bicubic;}
+a{outline:none;blr:expression(this.onFocus=this.blur());text-decoration:none;color: #333333;}
+a:hover{color: #165068;text-decoration: none;}
+input[type='button']{outline:none;border:0 none;background-color:transparent;cursor:pointer;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:400;}
+/*定义清除浮动样式 方法一*/
+.clearfix:after{content:'\20';display:block;height:0;clear:both; visibility:hidden;}
+.clearfix{zoom:1;}
+/*定义清除浮动样式 方法二*/
+.clear{clear:both;}
+/*font-size */
+.f12px{font-size:1.2em;}
+.f14px{font-size:1.4em;}
+.f16px{font-size:1.6em;}
+.f18px{font-size:1.8em;}
+.f20px{font-size:2.0em;}
+.f22px{font-size:2.2em;}
+.f24px{font-size:2.4em;}
+/*float */
+.fl{float:left;}
+.fr{float:right;}
+.ct{ margin:0 auto;}
+ul,ol,li{list-style:none outside none;}
+.tc{text-align:center !important;}
+.tl{text-align:left  !important;}
+.tr{text-align:right  !important;}
+.fwn{font-weight:normal;}
+.fwb{font-weight:bold;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+q:before,q:after{content:'';content:none;}
+input,textarea,select{font-weight:inherit;}
+input,select,textarea,button {vertical-align:middle}
+.pa{position:absolute;}
+.pr{position:relative;}
+.inblock{display:inline-block;*zoom:1;*display:inline;}
+.disnone{display:none;}
+.block{ display:block;}
+.hidden{ overflow:hidden !important;}
+.none{ display:none;}
+.textoverflow{ white-space:nowrap; overflow:hidden;text-overflow: ellipsis;}
+.underline:hover{text-decoration:underline;}
+.mtc{margin:0 auto;}
+.number{ font-family:Arial;}
+.fw600{font-weight: 600;}
+.hand{cursor: pointer;}
+.distable{display: table;}
+.distr{display:table-row;}
+.distd{display:table-cell;}
+.mr35px{margin-right: 35px;}
+.ml35px{margin-left: 35px;}
+.mr10px{margin-right:10px;}
+.ml10px{margin-left:10px;}
+.mt20px{margin-top:20px;}
+.topicInfo li{transtion:all 1s ease 0s}
+/*头部样式*/
+.wraq_header{ width:100%;  background:url(../images/top_02.png)/*tpa=http://www.lcu.edu.cn/images/top_02.png*/ no-repeat 380px top #165068; /*border-bottom: 6px solid #a1964a;*/ max-width: 1920px; margin: 0 auto;}
+.wraq_header.current .header_zhai{ position: fixed; display: block; left: 0px; top: 0px; z-index: 9999;}
+
+.header{ min-width: 320px; max-width: 1200px; height:120px; margin:0 auto;z-index:9999999;}
+.header01{ min-width: 320px; height:150px; margin:0 auto;z-index:9999999;}
+
+.logo{ width:290px; float:left;padding:35px 0 0 40px;}
+.header_zhai { width:100%; height: 60px; background: #165068; display: none; }
+.header_zhaiIn { max-width: 1200px; margin: 0 auto; }
+.header_zhaiIn .zhai_logo { float: left; width: 13%; margin: 1% 0 0 0; }
+.header_zhaiIn ul { overflow: hidden; float: right; width: 70%; }
+.header_zhaiIn ul li { float: left; height: 60px; line-height: 60px; padding: 0 2.6%; }
+.header_zhaiIn ul li a { color: #ffffff; font-size: 1.5em; }
+.header_zhaiIn ul li:hover{ background: #ffffff; }
+.header_zhaiIn ul li:hover a { color: #165068; }
+
+.links{ width:250px; height: 80px;float:right;text-align:right;margin-top:25px;}
+.links001 { width: 200px; margin-right: 100px; }
+.links01 li{ display: inline;height:18px; width: 31%; padding: 0 1%; float: left; background: url(../images/li.png)/*tpa=http://www.lcu.edu.cn/images/li.png*/ no-repeat left center; text-align: center; }
+.links01 li.first { background: none; }
+.links01 li.last { background: none; }
+.links01 a{ color:#c4d1d9; }
+.links01 a:hover{color: #c81622;}
+.btn_ser{ display: inline-block; width:34px; height: 31px;cursor: pointer;}
+.btn_ser01 { width: 80px; height: 150px; background: #0e4860; position: absolute; right: 0px; top: 0px; border-left: 1px solid #457386; }
+.btn_ser img{ vertical-align: middle;}
+.btn_ser01 img { position: absolute; left: 50%; top: 50%; margin: -7px 0 0 -7px; }
+.ser{width:200px; height:25px; right:100px; top:50px;line-height:25px; display: none; }
+.search{background:url(../images/search.png)/*tpa=http://www.lcu.edu.cn/images/search.png*/ no-repeat;width:200px; height: 25px;position:relative; overflow: hidden;margin-top:10px;}
+.search input{position:absolute; width:200px; height: 25px;line-height:25px; font-size: 1em; font-family:'Microsoft YaHei',SimSun,SimHei ,"STHeiti Light",STHeiti,"Lucida Grande", Tahoma,Arial, Helvetica, sans-serif; color:#6b6b6b; border:none; background:none; left:0px; top:0px; padding-left:0px; }
+.search input.notxt{color:#6b6b6b; padding-left:7px;width:170px;}   
+.search input.notxt1 {position: absolute; width: 25px;height: 25px;top: 0px;left:178px;border: none;background:url(../images/btn_ser.jpg)/*tpa=http://www.lcu.edu.cn/images/btn_ser.jpg*/ no-repeat;cursor:pointer; overflow: hidden; }
+/*导航*/
+.nav{width:800px;z-index:888;right:0;bottom:0px;}
+.nav ul{height:50px; margin:0px auto;max-width:1160px;}
+.nav ul li{float:left;height:50px;line-height:50px;padding:0 2.2% 0 2.2%;text-align:center;position:relative; }
+.nav ul li a{color:#fff; font-size:1.6em;display:block;}
+.nav ul li .subNav{ position:absolute; left:0;top:50px; left:0px; width: auto; display:none;background:url(../images/nav_bg01.png)/*tpa=http://www.lcu.edu.cn/images/nav_bg01.png*/ repeat;overflow:hidden;}
+.nav ul li .local{left:-86px;}
+.nav ul li.on{background-color:#fff;}
+.nav ul li.on a{color:#165068; white-space:nowrap;}
+.nav ul li.on .subNav { display:block; padding: 0 22px; }
+.nav ul li.on .subNav dl{overflow:hidden; }
+.nav ul li.on .subNav dl dd{height:auto;line-height:18px;padding:5px 0px 5px 0px;text-align:left;}
+.nav ul li.on .subNav dl dd a{ font-size:1.4em;line-height:18px; text-align:left; font-weight:normal; color:#165068;}
+.nav ul li.on .subNav dl dd a:hover{ color:#165068;font-weight:bold;}
+.nav ul li .pos_left{left:-72px;}
+
+
+.nav01 { position: absolute; width: 800px; left: 366px; bottom: 0px; }
+.nav01 ul{height:50px; margin:0px auto;max-width:1160px;}
+.nav01 ul li{float:left;height:50px;line-height:50px;padding:0 2.2% 0 2.2%;text-align:center;position:relative; }
+.nav01 ul li a{color:#fff; font-size:1.6em;display:block;}
+.nav01 ul li .subNav{ position:absolute; left:0;top:50px; left:0px; width: auto; display:none;background:url(../images/nav_bg01.png)/*tpa=http://www.lcu.edu.cn/images/nav_bg01.png*/ repeat;overflow:hidden;}
+.nav01 ul li .local{left:-86px;}
+.nav01 ul li.on{background-color:#fff;}
+.nav01 ul li.on a{color:#165068; white-space:nowrap;}
+.nav01 ul li.on .subNav { display:block; padding: 0 22px; }
+.nav01 ul li.on .subNav dl{overflow:hidden; }
+.nav01 ul li.on .subNav dl dd{height:auto;line-height:18px;padding:5px 0px 5px 0px;text-align:left;}
+.nav01 ul li.on .subNav dl dd a{ font-size:1.4em;line-height:18px; text-align:left; font-weight:normal; color:#165068;}
+.nav01 ul li.on .subNav dl dd a:hover{ color:#165068;font-weight:bold;}
+.nav01 ul li .pos_left{left:-72px;}
+
+/*手机端导航*/
+.snav{display: none;height: 36px;background-color:#1b6382;left:0px; top:0;z-index: 1002; width:100%;}
+.mbtn{display: none;height: 32px; right:10px; top:2px;z-index: 1002;width:32px;cursor:pointer;}
+.navm{ width:100%; line-height: 30px; background-color:#165068;overflow: hidden; text-align: left; display: none;top:36px;left:0}
+.navm ul{padding:0 0 10px;}
+.navm li{border-bottom:1px solid #064661;}
+.navm li a{ font-size: 16px;  line-height:18px; padding:10px 0px; color:#fff; padding-left:13px; font-family:Georgia, Arial, Helvetica, sans-serif; display:block;}
+.navm li a:hover{color:#fff;}
+.navm li.sub_has span{ margin-left: 10px;}
+.navm li.on a{ color:#fff; display:block; width:100%;}
+.navm dl{ display: none; background-color:#fff;color:#004489}
+.navm dl dd{ padding-left: 30px; line-height:18px; padding:8px 0px 8px 30px;border-bottom:1px solid #e5e5e5;}
+.navm li.on dl dd a{ font-size: 14px; color:#282828;font-weight:normal;display:inline; border:none; padding:0px;}
+.navm li dl dd a{ font-size: 14px; color:#282828; font-weight:normal; display:inline; display:block; border:none; padding:0px;}
+.navm li dl dd a:hover{ color:#165068;}
+
+/*直通车*/
+.video{width:31%; margin: 0 3.5% 0 0; float:left;overflow:hidden;}
+.learning { width:31%; margin: 0 3.5% 0 0; float:left; }
+.mode02 .title01 { height: 40px; line-height: 40px;  }
+.mode02 .title01 h2{ width:auto;}
+.mode02 .title01 a { float: right; margin: 8px 0 0 0; display: inline-block; }
+.mode02 .topic .title01 h2{width:auto;}
+.mode02 .title01 .more01{background-color:#f1f1f1;}
+.carInfo{width:100%;overflow:hidden;}
+.carInfo li{width:33%;border-right:1px solid #fff;float:left;height:117px;font-size:1.6em;text-align:center;line-height:185px;}
+.carInfo li.message:hover{filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8; transition: all 1s ease 0s;}
+.carInfo li a{color:#fff;display:block;}
+.message{background:url(../images/message01.png)/*tpa=http://www.lcu.edu.cn/images/message01.png*/ no-repeat center 20px;background-color:#4ba509;transition: all 1s ease 0s;}
+.talk{background:url(../images/talk01.png)/*tpa=http://www.lcu.edu.cn/images/talk01.png*/ no-repeat center 20px;background-color:#00988d;}
+.carInfo li.bbs{background:url(../images/bbs01.png)/*tpa=http://www.lcu.edu.cn/images/bbs01.png*/ no-repeat center 20px;background-color:#eea200;border-right:0;}
+.carInfo li:hover{filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8; transition: all 1s ease 0s;}
+.link001{padding:5px 14px;background-color:#fff;margin-top:15px;font-size:1.4em;height:90px;}
+.link001 div{width:49%;text-indent:2.8em;float:left}
+.link001 div:hover{filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8;  transition: all 1s ease 0s;}
+.link001 div a {padding-left:9px;color:#b81a35;}
+.tengxun{border:1px dashed #b4b4b4;border-top:none;border-left:none;height:46px;line-height:46px;background:url(../images/icon.png)/*tpa=http://www.lcu.edu.cn/images/icon.png*/ no-repeat;background-position:-284px -174px;}
+.sina{border-bottom:1px dashed #b4b4b4;height:46px;line-height:46px;background:url(../images/icon.png)/*tpa=http://www.lcu.edu.cn/images/icon.png*/ no-repeat;text-indent:2.8em;background-position:4px -245px}
+.weixin{ height:46px;line-height:46px;background:url(../images/icon.png)/*tpa=http://www.lcu.edu.cn/images/icon.png*/ no-repeat;background-position:2px -245px;}
+.mobile{height:46px;line-height:46px;background:url(../images/icon.png)/*tpa=http://www.lcu.edu.cn/images/icon.png*/ no-repeat;background-position:-275px -243px;}
+/*标题*/
+
+
+
+.fooer_wrap{width:100%; border-top: 4px solid #a1964a; background:url(../images/footer_bg_02.png)/*tpa=http://www.lcu.edu.cn/images/footer_bg_02.png*/ no-repeat top center; max-width: 1920px; margin: 0 auto; }
+.footer{margin:0 auto;height: 255px;padding: 0 2%;width: 96%;}
+.footer_left{width:26%;float:left;overflow:hidden;margin-top: 60px;border-right: 1px solid #6a8d9c;}
+.footer_left li { margin: 0 2% 0 0; float: left; width: 40%; line-height: 36px; }
+.footer_left li a { font-size: 16px; color: #f3fffb; }
+.footer_middle {/* width: 20%; */float: left;margin: 60px 0 0 0;padding: 0 7%;}
+.footer_middle li { font-size: 16px; color: #f3fffb; line-height: 32px; }
+.footer_middle01 {width:20%;float: left;margin: 60px 0 0 0;}
+.footer_middle01 li { font-size: 16px; color: #f3fffb; line-height: 32px; }
+.footer_logo { margin: 16px 0 0 0; float: right; }
+.footer_bottom { text-align: center; color: #d5dbe0; font-size: 14px; }
+.footer_bottom {height: px;line-height: 40px;background: #0c4d69;}
+
+
+.footer01 { display: none;   width: 100%; overflow: hidden; border-top: 4px solid #a1964a; background:url(../images/footer_bg_02.png)/*tpa=http://www.lcu.edu.cn/images/footer_bg_02.png*/ no-repeat top center #0c4d69; }
+.f_link { width: 50%; float: left; }
+.f_link ul { overflow: hidden; }
+.f_link ul li { padding:10px 20%; float: left; }
+.f_link ul li a{ color: #d5dbe0; font-size: 14px; }
+.f_link_line { overflow: hidden; }
+.line { width: 50%; float: right; }
+.line ul { overflow: hidden; }
+.line ul li { padding:10px 0%; float: left; color: #d5dbe0; font-size: 14px; }
+.copy { height: 40px; line-height: 40px; background: #0c4d69; color: #d5dbe0; font-size: 14px; text-align: center; }
+
+
+
+
+.header_fix { width: 100%; height: 100px; background: #165068; position: fixed; top: 0px; display: none; z-index: 9999; }
+.header_fixIn { max-width: 1200px; height: 100px; margin: 0 auto; }
+.header_fixIn .logo01 { width: 300px; height: 80px; float: left; margin: 10px 0 0 0; }
+.header_fixIn ul { float: right; overflow: hidden; width: 60%; }
+.header_fixIn ul li { height: 100px; height: 100px; line-height: 100px; margin: 0 2%; float: left; }
+.header_fixIn ul li a { color: #ffffff; font-size: 1.4em; }
+@media screen  and (max-width:1490px) {
+  .nav01  { width: 800px; }
+  .footer_logo { width: 20%; margin: 6% 0 0 0; }
+.footer_middle { padding: 0 3%; }
+}
+
+@media screen  and (max-width:1400px) {
+  .nav01  { width: 800px; }
+}
+
+@media screen  and (max-width:1200px) {
+ .nav{display:none;}
+  .snav{display:block;}
+  .btn_ser01 { display: none; }
+  .nav01 { display: none; } 
+  .wraq_header { background: #165068; }
+  .mbtn{display:block;}
+ .logo{width:260px;height:86px;margin:0px auto;padding-top:60px;float:none;}
+  .links{position:absolute;left:10px;top:5px;z-index:1005;margin-top:5px;}
+  .links a.btn_ser{padding:0 2px;height:25px;}
+  .ser{top:-3px;right:106px;display:none;}
+  .search{margin-top:0;}
+  #btn_ser{display:block;}
+}
+
+@media screen  and (max-width:1180px) {
+
+  
+.fooer_wrap { display: none; }
+.footer01 { display: block; }
+.links01 li.last { display: none; }
+.footer01_top { width: 96%; margin: 0px auto 0px; overflow: hidden; padding: 50px 0 50px 0; }
+.f_link_line { width: 50%; float: left; }
+.line { width: 100%; text-align: left; }
+.footer_logo_share { width: 40%; float: left; border-left: 1px solid #638b9d; padding: 0 0 0 5%;  }
+.footer_share { margin: 40px 0 0 0; }
+.footer_share span{ font-size: 18px; color: #ffffff; float: left; margin: 0 2%; }
+.footer_share ul { overflow: hidden; float: left; width: 50%; }
+.footer_share ul li { float: left; margin: 0 2% 0 2%; }
+}
+@media screen  and (max-width:1120px) {
+ .footer_left{margin-left:10px;}
+}
+
+
+
+
+@media screen  and (max-width:800px) {
+	  
+   .footer_right{display:none;}
+  .footer_logo{float:right;margin-right:88px;}
+  .footer_left{width:60%;}
+}
+
+@media screen  and (max-width:680px) {
+ .footer_logo_share h2 { display: none; }   
+ .footer_share span { display: none; }
+ .footer_share ul li { float: none; margin:  0 0 10px 0; }
+ .f_link_line { width: 70%; }
+ .footer_logo_share { width: 20%; }
+}
+
+
+@media screen and (max-width:640px) {
+   .footer_logo{width:55%;padding-top:10px;}
+  .footer{background-color:#005bac;height:149px;}
+  .footer_bottom{height:60px;text-align:center;line-height:60px;}
+  .footer_left{width:100%;padding-top:15px;text-align:center;margin:0;}
+}
+
+@media screen and (max-width:600px) {
+ 	.header{height:92px;}
+	.logo{width:200px;height:auto;padding-top:60px; padding-bottom: 20px;}
+	.slide_tabs{display:none;}
+   .logo img{width:200px;}
+}
+@media screen and (max-width:480px) {
+  	.footer_bottom{line-height:1.6em;padding-top:1em;height:48px}
+   .footer_bottom span{display:block;}
+.header01{ height: auto; }
+}
+
+@media screen and (max-width:400px) {
+.footer_share ul li { margin: 0 0 20px 0; }
+.f_link_line { width: 74%; }
+
+}
+
+

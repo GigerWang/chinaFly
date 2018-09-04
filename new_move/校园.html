@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>校园相册</title>
+	<link rel="stylesheet" type="text/css" href="css_other/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css_other/animate.min.css"/>	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/xiangce.css"/>
+	<link rel="stylesheet" type="text/css" href="css_other/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css_other/common.css"/>
+	<!--阿里矢量图库-->
+	<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_759387_3pckgn6umwq.css"/>
+	<script type="text/javascript" src="js_other/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js_other/home.js"></script>
+	<script type="text/javascript" src="js_other/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jstime/date.js"></script>
+	<script type="text/javascript" src="js/jstime/iscroll.js"></script>
+	<script type="text/javascript" src="js/jstime/datetime.js"></script>
+	<script type="text/javascript" src="js_other/text_overflow.js"></script>
+	<!--<script type="text/javascript" src="js_other/wow.min.js"></script>-->
+	<script type="text/javascript" src="js/ver.js"></script>
+</head>
+<body>
+<!--头部固定开始-->
+<div class="container remove_over">
+	<div class="fix_footer wow slideInUp">
+		<div id="nav_meau" class="fix_footer_left wow slideInLeft" onClick="javascript :history.back(-1);">
+			<i class="iconfont icon-zuobian new_i" aria-hidden="true"></i>
+		</div>
+		<div class="fix_footer_middle wow slideInUp">
+			校园相册
+		</div>
+		<div class="fix_footer_right wow slideInRight">
+		</div>
+	</div>
+</div>
+<!--头部固定结束-->
+<div class="remove_float"></div>
+<div class="spacdiv" style="height: 0.9rem;"></div>
+<div class="container show_picz" style="overflow: hidden;padding-bottom: 0.3rem;">
+	<div class="remove_float"></div>
+	<div class="show_pic">
+		<img src="images/xy/xy_pic1.png"/>
+		<div class="shade">
+			<div><i class="iconfont icon-tupian"></i></div>
+			<p>华南理工大学</p>
+		</div>
+	</div>
+	<div class="show_pic">
+		<img src="images/xy/xy_pic2.png"/>
+		<div class="shade">
+			<div><i class="iconfont icon-tupian"></i></div>
+			<p>岭南师范大学</p>
+		</div>
+	</div>
+	<div class="show_pic">
+		<img src="images/xy/xy_pic3.png"/>
+		<div class="shade">
+			<div><i class="iconfont icon-tupian"></i></div>
+			<p>哈尔滨工业大学</p>
+		</div>
+	</div>
+	<div class="show_pic">
+		<img src="images/xy/xy_pic4.png"/>
+		<div class="shade">
+			<div><i class="iconfont icon-tupian"></i></div>
+			<p>上海交通大学</p>
+		</div>
+	</div>
+	<div class="show_pic">
+		<img src="images/xy/xy_pic5.png"/>
+		<div class="shade">
+			<div><i class="iconfont icon-tupian"></i></div>
+			<p>四川外国语大学</p>
+		</div>
+	</div>
+	<div class="show_pic">
+		<img src="images/xy/xy_pic6.png"/>
+		<div class="shade">
+			<div><i class="iconfont icon-tupian"></i></div>
+			<p>北京理工大学</p>
+		</div>
+	</div>
+</div>	
+<div class="remove_float"></div>
+<div class="container ts">
+	<div class="tongz">
+		<span>
+			通知：
+		</span>
+		<p>2018年航空招生开始（名额有限，额满截止）有意向的学生请尽快报名，学校收到报名申请后将在两个工作日里与您取得联系（请保持电话的畅通)</p>
+	</div>
+	<div class="shengm">
+		<span>
+			声明：
+		</span>
+		<p>
+			请务必正确输入您的信息，以便我们的联系，不耽误您的报考；<br />
+			着重承诺：我们对您所填写的个人信息将绝对保密！
+		</p>
+	</div>
+</div>
+<div class="remove_float"></div>
+<div class="container bm_back">
+	<div class="bmbm">
+		<div class="bmbm_ch">
+			<div class="bmch_le">
+				<span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+			</div>
+			<div class="bmch_ri">
+				<input type="text" placeholder="请输入您的姓名" class="inpusp"/>
+			</div>
+		</div>
+		<div class="bmbm_ch">
+			<div class="bmch_le">
+				<span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</span>
+			</div>
+			<div class="bmch_ri">
+				<select name="" class="sele">
+					<option value="请选择">请选择</option>
+					<option value="男">男</option>
+					<option value="女">女</option>
+				</select>
+			</div>
+		</div>
+		<div class="bmbm_ch">
+			<div class="bmch_le">
+				<span>手机号码</span>
+			</div>
+			<div class="bmch_ri">
+				<input type="text" placeholder="请输入您的联系方式" class="inpusp inpusp1"/>
+			</div>
+		</div>
+		<div class="bmbm_ch">
+			<div class="bmch_le">
+				<span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址</span>
+			</div>
+			<div class="bmch_ri">
+				<input type="text" placeholder="请输入您的地址" class="inpusp"/>
+			</div>
+		</div>
+		<div class="bmbm_ch">
+			<div class="bmch_le">
+				<span>学生体重</span>
+			</div>
+			<div class="bmch_ri">
+				<input type="text" placeholder="请输入您的体重" class="inpusp"/>
+			</div>
+		</div>
+		<div class="bmbm_ch">
+			<div class="bmch_le">
+				<span>学生身高</span>
+			</div>
+			<div class="bmch_ri">
+				<input type="text" placeholder="请输入您的身高" class="inpusp"/>
+			</div>
+		</div>
+		<div class="bmbm_ch">
+			<div class="bmch_le">
+				<span>出生年月</span>
+			</div>
+			<div class="bmch_ri">
+				<input type="text" id="stu_date" placeholder="请输入您的出生年月" class="inpusp"/><div id="datePlugin"></div>
+			</div>
+		</div>
+		<div class="bmbm_ch" style="padding-top: 0.3rem;">
+			<div class="bmch_le">
+			</div>
+			<div class="bmch_ri">
+				<input type="image" src="images/index/bm_but.jpg" class="sub"/>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" style="overflow: hidden;position: relative;margin-top: 1.3rem;">
+	<div class="footer_n" style="position: fixed;bottom: 0;">
+		<a href="index.html">
+		<div class="footer_left col-xs-3">
+			<i class="iconfont icon-weibiaoti1 more_i"></i><p>首页</p>
+		</div>	
+		</a>
+		<a href="400-100-1000">
+		<div class="footer_left col-xs-3">
+			<i class="iconfont icon-dianhua2 more_i"></i><p>联系我们</p>
+		</div>	
+		</a>
+		<a href="test.html">
+		<div class="footer_left col-xs-3">
+			<i class="iconfont icon-ceshi more_i"></i><p>免费测试</p>
+		</div>	
+		</a>
+		<a href="online.html">
+		<div class="footer_left col-xs-3">
+			<i class="iconfont icon-shipin more_i"></i><p>校园视频</p>
+		</div>	
+		</a>
+	</div>
+</div>
+<div class="container">
+	<div class="pingzhang" style="height: 0;">
+		
+		<div class="showpicone">
+		    <div class="swiper-container" style="margin-top: 2.5rem;">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide" style="background-image: url(images/xy/xy_pic1.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic2.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic3.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic4.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic5.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic6.png);background-position: center;background-size: cover;"></div>
+	        </div>
+	    	</div>	
+	    	<div class="swiper_con">
+	    		<div>
+	    			sssss1
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss2
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss3
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss4
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss5
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss6
+	    		</div>
+	    	</div>
+		</div>
+		
+		<div class="showpicone" style="height: 0;overflow: hidden;">
+		    <div class="swiper-container" style="margin-top: 2.5rem;">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide" style="background-image: url(images/xy/xy_pic1.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic2.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic3.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic4.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic5.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic6.png);background-position: center;background-size: cover;"></div>
+	        </div>
+	    	</div>	
+	    	<div class="swiper_con">
+	    		<div>
+	    			sssss12
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss22
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss32
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss42
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss52
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss62
+	    		</div>
+	    	</div>			
+		</div>
+
+		<div class="showpicone" style="height: 0;overflow: hidden;">
+		    <div class="swiper-container" style="margin-top: 2.5rem;">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide" style="background-image: url(images/xy/xy_pic1.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic2.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic3.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic4.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic5.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic6.png);background-position: center;background-size: cover;"></div>
+	        </div>
+	    	</div>	
+	    	<div class="swiper_con">
+	    		<div>
+	    			sssss13
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss23
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss33
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss43
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss53
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss63
+	    		</div>
+	    	</div>			
+		</div>
+		
+		<div class="showpicone" style="height: 0;overflow: hidden;">
+		    <div class="swiper-container" style="margin-top: 2.5rem;">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide" style="background-image: url(images/xy/xy_pic1.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic2.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic3.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic4.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic5.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic6.png);background-position: center;background-size: cover;"></div>
+	        </div>
+	    	</div>	
+	    	<div class="swiper_con">
+	    		<div>
+	    			sssss14
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss24
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss34
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss44
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss54
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss64
+	    		</div>
+	    	</div>			
+		</div>
+		
+		<div class="showpicone" style="height: 0;overflow: hidden;">
+		    <div class="swiper-container" style="margin-top: 2.5rem;">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide" style="background-image: url(images/xy/xy_pic1.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic2.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic3.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic4.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic5.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic6.png);background-position: center;background-size: cover;"></div>
+	        </div>
+	    	</div>	
+	    	<div class="swiper_con">
+	    		<div>
+	    			sssss15
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss25
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss35
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss45
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss55
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss65
+	    		</div>
+	    	</div>			
+		</div>		
+		
+		<div class="showpicone" style="height: 0;overflow: hidden;">
+		    <div class="swiper-container" style="margin-top: 2.5rem;">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide" style="background-image: url(images/xy/xy_pic1.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic2.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic3.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic4.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic5.png);background-position: center;background-size: cover;"></div>
+				<div class="swiper-slide" style="background-image: url(images/xy/xy_pic6.png);background-position: center;background-size: cover;"></div>
+	        </div>
+	    	</div>	
+	    	<div class="swiper_con">
+	    		<div>
+	    			sssss16
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss26
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss36
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss46
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss56
+	    		</div>
+	    		<div style="display: none;">
+	    			sssss66
+	    		</div>
+	    	</div>			
+		</div>		
+	
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/xiangce.js"></script>
+</html>

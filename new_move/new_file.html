@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 20px;
+        }
+        .box{
+            position: relative;
+            display: inline-block;
+            max-width: 200px;
+            padding: 4px 8px;
+            border-radius: 2px;
+            background-color: green;
+            line-height: 20px;
+            font-size: 14px;
+        }
+        .u-tri:before{
+            position: absolute;
+            right: -24px;
+            top: 4px;
+            content: '';
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 12px solid green;
+            border-right: 12px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="box u-tri">测试</p>
+    </div>
+    <div>
+        <div class="box u-tri">nizahhhshs 哈哈哈哈哈哈我只是个则是的我只是个可爱的测试案列e</div>
+    </div>
+</body>
+</html>

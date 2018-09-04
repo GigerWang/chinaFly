@@ -1,0 +1,833 @@
+7@charset "utf-8";
+/* CSS Document */
+
+body{ padding: 0px; margin: 0px; font-family: "微软雅黑","宋体"; font-size: 14px; color: #333333; line-height: 30px; -webkit-font-smoothing:antialiased;font-smoothing:antialiased; /* min-width:1218px; */ }
+ul,li{ list-style: none; padding: 0px; margin: 0px;}
+a,a:hover{ text-decoration: none; transition: all 0.2s ease-in-out;}
+h1,h2,h3,h4,h5,h6,p,span{ padding: 0px; margin: 0px;}
+img{ border: 0px;}
+h1,h2,h3,h4,p{ padding: 0px; margin: 0px;}
+
+/*首页*/
+.top{
+	width:100%;
+	float:left;
+}
+.top_top{
+	width:100%;
+	background:#ab010b;
+	height:137px;
+}
+.top_top_zhong{
+	width:1216px;
+	height:137px;
+	margin:0px auto;
+background:#ab010b;	
+}
+.top_top_top{
+	width:1216px;
+	height:33px;
+	
+	font-size:14px;
+	line-height:33px;
+	color:#ffffff;
+}
+.top_top_top ul li{
+	min-width:70px;
+	height:15px;
+	float:right;
+	font-size:14px;
+	line-height:15px;
+	color:#ffffff;
+	margin-top:10px;
+	text-align:center;
+	padding:0px 20px;
+	border-left:1px solid #ffffff;
+}
+.top_top_top ul li a{
+	color:#ffffff;
+}
+.top_top_top ul li a:hover{
+	color:#ffffff;
+	text-decoration:underline;
+}
+.top_top_down{
+	width:1216px;
+	height:154px;
+	background:url(../images/logo.jpg)/*tpa=http://www.sdjtu.edu.cn/images/logo.jpg*/ no-repeat;
+}
+.top_nav{
+	width:100%;
+	height:50px;
+	background:#d7000f;	
+}
+.top_nav_nav{
+	width:1216px;
+	height:50px;
+	margin:0px auto;
+background:#d7000f;	
+}
+.top_nav_left{
+	width:955px;
+	height:50px;
+	float:left;
+}
+.top_nav_search{
+	width:239px;
+	float:left;
+	height:23px;
+	margin-top:13px;
+	background:url(../images/srarch.jpg)/*tpa=http://www.sdjtu.edu.cn/images/srarch.jpg*/ no-repeat;
+}
+.top_down{
+	width:100%;
+	background:#FFF;
+	height:41px;	
+}
+.top_down_zi{
+	width:1216px;
+	margin:0px;
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#5e5e5e;
+	line-height:41px;
+}
+.top_down_zi a{
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#5e5e5e;
+	line-height:41px;
+}
+.top_down_zi a:hover{
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#5e5e5e;
+	line-height:41px;
+}
+.zhong{
+	width:100%;
+	float:left;	
+}
+.banner{
+	width:100%; min-height:210px; height:auto !important; height:210px
+	
+	float:left;
+
+}
+.zhong_down{
+	width:100%;
+	float:left;
+}
+.zhong_down_z{
+	width:1216px;
+/*	height:780px;*/
+	margin:0px auto;	
+}
+.zhong_top{
+	width:1216px;
+	margin-top:30px;
+	float:left;	
+}
+.zhong_top_left{
+	width:378px;
+	height:480px;
+	float:left;
+}
+.zhong_top_left_top{
+	width:320px;
+	height:32px;
+	margin-bottom:22px;
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	background:url(../images/xxxw.jpg)/*tpa=http://www.sdjtu.edu.cn/images/xxxw.jpg*/ no-repeat;
+	padding-left:46px;
+	color:#ac010b;
+}
+.zhong_top_left_top a{
+
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	color:#ac010b;
+}
+.zhong_top_left_top a:hover{
+
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	color:#ac010b;
+}
+.zhong_top_left_top span{
+	font-size:15px;
+	font-family:"微软雅黑";
+	color:#898989;
+	width:211px;
+}
+.zhong_top_left_heng{
+	width:378px;
+	height:1px;
+	background:#898989;
+	margin-bottom:10px;
+}
+.zhong_top_left_heng_xia{
+	width:378px;
+	height:1px;
+	background:#898989;
+	margin-top:10px;
+float:left;
+}
+.zhong_top_left_xiazi{
+	width:378px;
+	height:30px;
+line-height:25px;
+ float:left;
+background:url(../images/dian.jpg)/*tpa=http://www.sdjtu.edu.cn/images/dian.jpg*/ bottom repeat-x;
+
+}
+.zhong_top_left_xiazi_left{
+	
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#221815;
+	line-height:38px;
+	float:left;
+background:#ffffff;
+padding-right:5px;
+       
+}
+.zhong_top_left_xiazi_left a{
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#221815;
+	line-height:37px;
+}
+.zhong_top_left_xiazi_left a:hover{
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#221815;
+	line-height:37px;
+}
+.zhong_top_left_xiazi_right{
+	width:40px;
+	font-size:13px;
+	font-family:"微软雅黑";
+	color:#898989;
+	line-height:37px;
+	float:right;
+background:#ffffff;
+}
+.zhong_top_left_gengduo{
+	width:378px;
+	font-size:14px;
+	height:50px;
+	font-family:"微软雅黑";
+	color:#898989;
+	line-height:50px;
+	text-align:right;
+}
+.zhong_top_left_gengduo a{
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#898989;
+	line-height:50px;
+	text-align:right;
+}
+.zhong_top_left_gengduo a:hover{
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#898989;
+	line-height:50px;
+	text-align:right;
+}
+.zhong_top_zhong{
+	width:378px;
+	height:480px;
+	margin-left:43px;
+	float:left;
+}
+.zhong_top_zhong_top{
+	width:301px;
+	height:32px;
+	margin-bottom:22px;
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	background:url(../images/xycz.jpg)/*tpa=http://www.sdjtu.edu.cn/images/xycz.jpg*/ no-repeat;
+	padding-left:46px;
+	color:#ac010b;
+}
+.zhong_top_zhong_top a{
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	color:#ac010b;
+}
+.zhong_top_zhong_top a:hover{
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	color:#ac010b;
+}
+.zhong_top_zhong_top span{
+	font-size:15px;
+	font-family:"微软雅黑";
+	color:#898989;
+	width:211px;
+}
+.zhong_top_right{
+	width:378px;
+	height:480px;
+	margin-left:38px;
+	float:left;
+}
+.zhong_top_right_top{
+	width:378px;
+	height:32px;
+	margin-bottom:22px;
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	background:url(../images/xxgg.jpg)/*tpa=http://www.sdjtu.edu.cn/images/xxgg.jpg*/ no-repeat;
+	padding-left:46px;
+	color:#ac010b;
+}
+.zhong_top_right_top a{
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	color:#ac010b;
+}
+.zhong_top_right_top a:hover{
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	color:#ac010b;
+}
+.zhong_top_right_top span{
+	font-size:15px;
+	font-family:"微软雅黑";
+	color:#898989;
+	width:211px;
+}
+.zhong_kstd{
+	width:1216px;
+	height:225px;
+	margin-top:10px;
+	float:left;
+}
+.zhong_kstd_top{
+	width:1170px;
+	height:32px;
+	margin-bottom:22px;
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	padding-left:46px;
+	color:#ac010b;
+	background:url(../images/kstd.jpg)/*tpa=http://www.sdjtu.edu.cn/images/kstd.jpg*/ no-repeat;
+}
+.zhong_kstd_top a{
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	color:#ac010b;
+}
+.zhong_kstd_top a:hover{
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:32px;
+	color:#ac010b;
+}
+.zhong_kstd_top span{
+	font-size:15px;
+	font-family:"微软雅黑";
+	color:#898989;
+	width:211px;
+}
+.zhong_kstd_heng{
+	width:1216px;
+	height:1px;
+	background:#898989;
+	margin-bottom:17px;
+          float:left;
+}
+.zhong_kstd_heng_xia{
+	width:1216px;
+	height:1px;
+	background:#898989;
+	margin-top:17px;
+           float:left;
+}
+.zhong_kstd_xia{
+	width:1216px;
+	
+
+	background:url(../images/kstd_bj.jpg)/*tpa=http://www.sdjtu.edu.cn/images/kstd_bj.jpg*/ no-repeat;
+        float:left;
+}
+.zhong_kstd_xia_zi{
+	width:135px;
+	float:left;
+	height:30px;
+	font-size:14px;
+	color:#0c0c0c;
+	font-family:"微软雅黑";
+	line-height:30px;
+font-weight:bold;
+text-align:center;	
+}
+.zhong_kstd_xia_zi a{
+	font-size:14px;
+	color:#0c0c0c;
+	font-family:"微软雅黑";
+	line-height:30px;
+font-weight:bold;
+text-align:center;	
+}
+.zhong_kstd_xia_zi a:hover{
+	font-size:14px;
+	color:#ab010b;
+	font-family:"微软雅黑";
+	line-height:30px;
+font-weight:bold;
+text-align:center;	
+}
+.zhong_red{
+	width:1216px;
+	height:111px;
+	margin-top:30px;
+	margin-bottom:30px;
+		
+}
+.zhong_red_1{
+	width:115px;
+	height:111px;
+	float:left;
+}
+.zhong_red_2{
+	width:115px;
+	height:111px;
+	float:left;
+	margin-left:7px;
+}
+.zhong_red_top{
+	width:115px;
+	height:111px;	
+}
+.zhong_red_xia{
+	width:94px;
+	height:40px;
+	margin-top:2px;
+	font:14px/40px  "微软雅黑";
+	font-weight:bolder;
+	color:#FFF;
+	text-align:center;
+	background:url(../images/dib.jpg)/*tpa=http://www.sdjtu.edu.cn/images/dib.jpg*/ no-repeat;	
+}
+.zhong_red_xia a{
+	font:14px/40px  "微软雅黑";
+	font-weight:bolder;
+	color:#FFF;
+	text-align:center;
+}
+.zhong_red_xia a:hover{
+	font:14px/40px  "微软雅黑";
+	font-weight:bolder;
+	color:#FFF;
+	text-align:center;	
+}
+.zhong_red_xia_2{
+	width:94px;
+	height:40px;
+	margin-top:2px;
+	font:14px/15px  "微软雅黑";
+	font-weight:bolder;
+	color:#FFF;
+	text-align:center;
+	background:url(../images/dib.jpg)/*tpa=http://www.sdjtu.edu.cn/images/dib.jpg*/ no-repeat;
+	padding-top:5px;	
+}
+.zhong_red_xia_2 a{
+	font:14px/15px  "微软雅黑";
+	font-weight:bolder;
+	color:#FFF;
+	text-align:center;
+	padding-top:5px;	
+}
+.zhong_red_xia_2 a:hover{
+	font:14px/15px  "微软雅黑";
+	font-weight:bolder;
+	color:#FFF;
+	text-align:center;
+	padding-top:5px;	
+}
+.zhong_tjzt{
+	width:100%;
+	float:left;
+}
+.zhong_tjzt_top_bj{
+	width:100%;
+	height:61px;
+	background:#b5b5b6;
+}
+.zhong_tjzt_top{
+	width:1216px;
+	margin:0px auto;	
+}
+.zhong_tjzt_top_left{
+	width:954px;
+	height:61px;
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:61px;
+	padding-left:46px;
+	color:#fff;
+	background:url(../images/tjzt.jpg)/*tpa=http://www.sdjtu.edu.cn/images/tjzt.jpg*/ no-repeat left center;
+	float:left;
+}
+.zhong_tjzt_top_left a{
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:61px;
+	color:#fff;
+	float:left;
+}
+.zhong_tjzt_top_left a:hover{
+	font-size:20px;
+	font-family:"微软雅黑";
+	line-height:61px;
+	color:#fff;
+	float:left;
+}
+.zhong_tjzt_top_left t{
+	font-size:15px;
+	font-family:"微软雅黑";
+	color:#fff;
+	width:211px;
+}
+.zhong_tjzt_top_right{
+	width:216px;
+	height:61px;
+	font:14px/61px "微软雅黑";
+	text-align:right;
+	float:left;
+	color:#FFF;
+}
+.zhong_tjzt_top_right a{
+	width:216px;
+	height:61px;
+	font:14px/61px "微软雅黑";
+	text-align:right;
+	float:left;
+	color:#FFF;
+}
+.zhong_tjzt_top_right a:hover{
+	width:216px;
+	height:61px;
+.zhong_tjzt_xia
+	text-align:right;
+	float:left;
+	color:#FFF;
+}
+.zhong_tjzt_xia{
+	width:100%;
+	height:135px;
+	float:left;
+
+}.zhong_tjzt_xia_zhong{
+	width:1216px;
+	height:135px;
+	margin:0px auto;	
+}
+.zhong_tjzt_img img{
+	width:192px;
+	height:96px;
+
+    
+	
+}
+.zhong_tjzt_img2 img{
+	width:192px;
+	height:96px;
+	
+}
+.zhong_tjzt_img{
+	width:192px;
+	height:96px;
+	float:left;
+margin-left:2px;	
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.zhong_tjzt_img2{
+	width:192px;
+	height:96px;
+	float:left;
+	margin-left:12px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.foot{
+	width:100%;
+	float:left;
+	background:#ab010b;
+	z-index:-100;
+}
+.footer{
+	width:1216px;
+	margin:0px auto;
+	height:125px;
+          background:#ab010b;
+}
+.footer_left{
+	width:95px;
+	height:85px;
+	padding-top:20px;
+	font:13px/20px "微软雅黑";
+	color:#fff;
+	float:left;	
+}
+
+.footer_left a{
+	font:13px/20px "微软雅黑";
+	color:#fff;
+	float:left;	
+}
+.footer_center{
+	width:700px;
+	height:85px;
+	padding-top:20px;
+	font:13px/20px "微软雅黑";
+	color:#fff;
+	float:left;	}
+.footer_center p{
+	width:700px;
+	height:20px;
+	line-height:20px;
+	font:13px/20px "微软雅黑";
+	color:#ffffff;
+	float:left;	}
+.footer_right{
+	width:25 px;
+	padding-top:20px;
+	float:right;	
+	
+}
+.footer_right_img{
+	width:79px;
+	height:89px;
+	margin-left:18px;
+	float:left;
+	
+}
+.footer_right_img_top{
+	width:79px;
+	height:69px;
+	float:left;
+	
+}
+.footer_right_img_bottom{
+	width:79px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	color:#ffffff;
+	text-align:center;
+	font-size:12px;
+	
+}
+.footer_right_email{
+	width:40px;
+	height:89px;
+	float:left;
+	margin-left:15px;
+	
+}
+.footer_right_email_top{
+	width:40px;
+	height:40px;
+	float:left;
+	margin-bottom:5px;
+}
+
+.text{   width: 200px;
+    height: 23px;
+    padding-left: 10px;
+    border:0px #fff;
+    line-height: 23px;
+    font-size: 12px;
+   outline:none ;
+	float:left;
+	background:url(../images/textleft.jpg)/*tpa=http://www.sdjtu.edu.cn/images/textleft.jpg*/ no-repeat left;}
+.martop
+{
+	margin-top:4px;
+	_margin-top:2px;
+	border:0px;}	
+.btn{float:right; }
+.btnsub{ width:29px; 
+height:23px; 
+background:url(../images/rightbtn.jpg)/*tpa=http://www.sdjtu.edu.cn/images/rightbtn.jpg*/ no-repeat; 
+border:0px; 
+cursor:pointer;}
+
+/*新闻动态*/
+.news_wrap{ width:100%; min-height:765px; height:auto !important; height:765px; float:left;}
+.news_wrap1{ width:100%; height:1218px; float:left;}
+.Newsbanner{ width:100%; height:320px; float:left;}
+.news_main{ width:100%; min-height:440px; height:auto !important; height:440px; float:left;}
+.news_center{ width:1218px; min-height:440px; height:auto !important; height:440px; margin:0px auto; padding-bottom:30px; padding-top:25px;}
+
+.news_position{ width:1218px; height:60px; float:left; background:#eaeaea; border-bottom:1px solid #e60213; }
+.news_wz{ width:800px; float:left; padding-left:20px; line-height:60px; font-size:18px; color:#d8000f; font-weight:bold;}
+.news_wz a{ line-height:60px; font-size:18px; color:#d8000f; font-weight:bold;}
+.news_wz a:hover{ line-height:60px; font-size:18px; color:#d8000f;}
+.news_list{ width:985px; float:left; padding-top:20px; line-height:35px; padding-bottom:30px;}
+.news_list ul li{ width:985px; float:left; height:35px;line-height:35px; background:url(../images/dian.jpg)/*tpa=http://www.sdjtu.edu.cn/images/dian.jpg*/ bottom repeat-x;}
+.news_list ul li .left_sj{float:left; height:35px;line-height:35px; background:url(../images/llist.jpg)/*tpa=http://www.sdjtu.edu.cn/images/llist.jpg*/ no-repeat left; padding-left:25px; background-color:#ffffff; font-size:16px; color:#000000;}
+.news_list ul li .left_sj a{line-height:35px;  font-size:16px; color:#000000;}
+.news_list ul li .left_sj a:hover{line-height:35px;  font-size:16px; color:#d50110;}
+.news_list ul li .left_date{float:right; height:35px;line-height:35px;  background-color:#ffffff; font-size:16px; color:#000000;}
+
+/*新闻动态详细*/
+.newstitle{ font-size:26px; text-align:center; width:100p%; color:#000000; font-weight:bold; line-height:50px;}
+.news_line{ width:100%; height:33px; border-top:1px solid #bfbfbf; border-bottom:1px solid #bfbfbf; line-height:33px; margin-top:30px; font-size:16px;text-align:center;}
+.news_zleft{float:left;line-height:33px;margin-left:15px;text-align:center;}
+.news_font{float:left;line-height:33px;margin-left:15px;text-align:center;}
+.news_zdate{ float:left;margin-left:15px;text-align:center;}
+#zoom{ line-height:30px; color:#000000; padding-top:20px; font-size:16px; font-family:"宋体";}
+
+/*学院概况*/
+.about_center{ width:1218px; min-height:440px; height:auto !important; height:440px; margin:0px auto; padding-bottom:30px; margin-top:25px; background:url(../images/ce.jpg)/*tpa=http://www.sdjtu.edu.cn/images/ce.jpg*/ left repeat-y;}
+.about_left{ width:212px; float:left; line-height:42px; font-size:15px;}
+.about_lefttitle{ width:172px; height:63px; background:url(../images/abouttitle.jpg)/*tpa=http://www.sdjtu.edu.cn/images/abouttitle.jpg*/ no-repeat left; padding-left:40px; font-size:25px; color:#ffffff; font-weight:bold; line-height:62px; float:left;}
+.about_navlist{ width:212px; line-height:42px; float:left;}
+.about_navlist ul li{ width:212px; line-height:42px; float:left; background:url(../images/navlist.jpg)/*tpa=http://www.sdjtu.edu.cn/images/navlist.jpg*/ no-repeat; line-height:42px; font-size:20px; color:#000000; display:block}
+.about_navlist ul li a{  line-height:42px; font-size:20px; color:#000000; display:block; padding-left:40px;}
+.about_navlist ul li a:hover{ line-height:42px; font-size:20px; color:#aa0009; background:url(../images/navhover.jpg)/*tpa=http://www.sdjtu.edu.cn/images/navhover.jpg*/ no-repeat; display:block}
+.about_navlist ul li .cur{ line-height:42px; font-size:20px; color:#aa0009; background:url(../images/navhover.jpg)/*tpa=http://www.sdjtu.edu.cn/images/navhover.jpg*/ no-repeat; display:block}
+.about_right{ width:1004px; float:right; line-height:42px; font-size:15px;}
+.about_position{width:1004px; height:60px; float:left; background:#eaeaea; border-bottom:1px solid #e60213; margin-bottom:20px;}
+.about_wz{ width:600px; float:left; padding-left:20px; line-height:60px; font-size:18px; color:#d8000f; font-weight:bold;}
+.about_wz a{  line-height:60px; font-size:18px; color:#d8000f; font-weight:bold;}
+.about_wz a:hover{ line-height:60px; font-size:18px; color:#d8000f;}
+
+.about_main{ width:964px; padding:20px; font-size:16px; color:#000000; line-height:35px; float:left; }
+.about_main p{  font-size:16px; color:#000000; line-height:35px;}
+
+/*章程*/
+.zhang_main{ width:984px; padding:20px; padding-right:0px; font-size:16px; color:#000000; line-height:35px; float:left; }
+
+.accordion{ width:984px; float:left;}
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	height:43px; 
+	line-height:43px;
+	color: #e70012;
+	font-size: 18px;
+	font-weight:600px;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.bhx{ border-bottom:1px solid #eaeaea;}
+.gwcologe{ width:100px; color:#6f6f6f; float:left;}
+.accordion li i {
+	position: absolute;
+	top: 13px;
+	left: 12px;
+	font-size: 18px;
+	color: #c0c0c0;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {right: 12px;left: auto;font-size: 16px;}
+.accordion li.open .link {color: #e70012}
+.accordion li.open i {color: #b63b4d;}
+.accordion li.open i.fa-chevron-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+ .submenu {display: none;font-size: 15px; width:984px; height:auto; line-height:35px;}
+ .submenu ul li{font-size: 15px; float:left; height:auto; width:982px; list-style:none; padding:0px; margin:0px; }
+.leftnum {font-size: 16px; float:left; width:50px; line-height:35px;font-weight:600px; }
+.rightfont { width:909px;font-size: 16px; float:right;  line-height:35px;font-weight:600px; }
+
+
+
+.zhang_title{height:60px; line-height:40px; font-size:23px; color:#000000; border-bottom:1px solid #eaeaea;}
+ 
+ .submenu p { width:100%; float:left; }
+ .xxmc { width:965px;font-size: 16px; float:left;  line-height:35px;font-weight:600px; padding-bottom:20px; }
+ .xxmc p{ font-size: 16px;  line-height:35px; text-indent: 2em; }
+.ge_left{ width:375px; height:700px; float:left;font-size: 16px;  line-height:35px;font-weight:600px;}
+.ge_right{ width:535px; height:720px; float:right;}
+.leftcoloege {font-size: 17px; float:left; width:100px; line-height:35px;font-weight:600px; color:#6f6f6f; }
+.rightcoloege { width:880px;font-size: 17px; float:right;  line-height:35px;font-weight:600px; }
+.bor{border-bottom: 1px solid #eaeaea; float:left; width:984px;}
+.bot{border-top: 1px solid #333333; float:left; width:984px;}
+
+ .djbm_list{ width:980px; float:left; background:url(../images/line.jpg)/*tpa=http://www.sdjtu.edu.cn/images/line.jpg*/ top center no-repeat; line-height:35px; height:400px; }
+ .djbm_bm{ width:455px; line-height:38px; height:38px; border-bottom:1px solid #eaeaea; background:url(../images/dsj.jpg)/*tpa=http://www.sdjtu.edu.cn/images/dsj.jpg*/ no-repeat left; padding-left:15px; font-size:18px; color:#000000; margin-left:15px; float:left; }
+.djbm_bm a{  font-size:18px; color:#000000; }
+.djbm_bm a:hover{  font-size:18px; color:#ab010a; }
+
+
+
+.playbox{width:985px;overflow:hidden;}
+.playbox a{ height:203px; overflow:hidden; display:block; float:left; margin-left:10px;margin-bottom:20px; position:relative; text-decoration:none;}
+ 
+.playbox a img{ width:317px; height:203px;}
+
+
+
+#tab { width:970px; height:920px; position:relative;  float:left; background:url(../images/tab.jpg)/*tpa=http://www.sdjtu.edu.cn/images/tab.jpg*/ left top no-repeat; padding-left:34px;}
+/*设置容器高宽等*/
+html > body #tab { width:1003px;}
+/*兼容IE6:IE6下宽度不够*/
+#tab .div { position:absolute; top:75px; left:0; width:983px; height:930px; margin-left:26px;}
+/*设置容器高宽等*/
+#tab div { display:;}
+/*设置容器默认隐藏:不用ID是因为下面将利用class来控制容器显示,而class优先级低于id选择器*/
+#tab .block { display:block;}
+#tab .none { display:none;}
+/*选中的容器*/
+#tab h3 { float:left; width:133px; height:44px; line-height:30px; margin:0 0 0 0; font-size:17px; color:#e60012; line-height:45px; cursor:pointer;  margin-right:1px;  margin-top:14px; text-align:center; color:#6f6f6f; font-family:Microsoft YaHei;font-weight:normal;}
+/*默认标题样式*/
+#tab .up { background:url(../images/hh.jpg)/*tpa=http://www.sdjtu.edu.cn/images/hh.jpg*/ no-repeat left;font-size:17px; color:#e60012; line-height:45px;}
+/*选中的标题样式*/
+/*修饰列表内容*/
+#tab ul { list-style:none; padding:0; height:186px; margin-top:0px;}
+#tab li { margin-left:10px; margin-right:10px; background:url(../images/dian.jpg)/*tpa=http://www.sdjtu.edu.cn/images/dian.jpg*/ bottom repeat-x;height:38px; line-height: 38px; overflow:hidden; font-size:16px;}
+#tab li a { display:inline; font-size:16px; text-decoration:none; text-indent:10px; margin-right:10px; background:#ffffff; line-height:39px; }
+.xw_left{  height:38px; background:#ffffff;}
+#tab li a:hover { color:#a1070f; }
+#tab li span{ display:block;  }
+#tab li span a{ color:#000000;}
+a.tab_title:link { color: #5a5a5a; text-decoration:none;}
+a.tab_title:visited { color:#5a5a5a; text-decoration:none;}
+a.tab_title:hover { color:#5a5a5a; text-decoration:none;}
+a.tab_title:active { color:#5a5a5a; text-decoration:none;}
+a.tab_menu:link { color:#6464d5; text-decoration:none;}
+a.tab_menu:hover { color:#8888e0; text-decoration:underline;}
+.xw_zi{background:url(../images/llist.jpg)/*tpa=http://www.sdjtu.edu.cn/images/llist.jpg*/ no-repeat left;background-color:#ffffff; padding-right:5px; float:left; padding-left:25px; height:38px;}
+.xw_date{background:#ffffff; float:right; padding-left:5px;}
+.xy_wrap{width:180px; height:295px; float:left; margin-left:18px;}
+.xy_img{width:180px; height:225px; float:left; border:1px solid #e60012}
+.xy_img img {width:180px; height:225px;}
+.xy_text{width:180px; height:60px; float:left; line-height:50px; font-size:18px; text-align:center; color:#ab010b}
+.xy_text a{width:180px; height:60px; float:left; line-height:50px; font-size:18px; text-align:center; color:#ab010b;}
+
+.news_list1{ width:970px; float:left;  line-height:35px; padding-bottom:30px;}
+.news_list1 ul li{ width:970px; float:left; height:35px;line-height:35px; background:url(../images/dian.jpg)/*tpa=http://www.sdjtu.edu.cn/images/dian.jpg*/ bottom repeat-x;}
+.left_sj1{float:left; height:35px;line-height:35px; background:url(../images/llist.jpg)/*tpa=http://www.sdjtu.edu.cn/images/llist.jpg*/ no-repeat left; padding-left:25px; background-color:#ffffff; font-size:16px; color:#000000;}
+.left_sj1 a{line-height:35px;  font-size:16px; color:#000000;}
+.left_sj1 a:hover{line-height:35px;  font-size:16px; color:#d50110;}
+.left_date1{float:right; height:35px;line-height:35px;  background-color:#ffffff; font-size:16px; color:#000000;}
