@@ -2418,3 +2418,248 @@ input::-webkit-input-placeholder {
 	padding: 0.35rem 0.2rem 0.35rem 0.2rem;
 }
 /*就业页面*/
+.jy_kcjs{
+	background: #ff9e1d;
+	overflow: hidden;
+	
+}
+.jy_kcjs>h2{
+	font-size: 0.4rem;
+	line-height: 0.6rem;
+	letter-spacing: 0.04rem;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 0.3rem;
+}
+.jy_kcjs img{
+	float: left;
+	margin-top: 0.1rem;
+}
+.jy_kcjscon{
+	width: 6.9rem;
+	margin-left: 0.3rem;
+	margin-top: 0.4rem;
+	background: #fee3af;
+	border-radius: 10px;
+	text-align: center;
+}
+.jy_kcjscon p{
+	width: 5.95rem;
+	margin: 0 auto;
+	padding-top: 0.4rem;
+	padding-bottom: 0.35rem;
+	font-size: 0.26rem;
+	line-height: 0.41rem;
+	color: #323232;
+	text-indent: 2em;
+	letter-spacing: 0.03rem;
+	text-align: left;
+}
+.jy_kcjscon button{
+	width: 3.6rem;
+	height: 0.6rem;
+	border-radius: 50px;
+	background: #af3a01;
+	line-height: 0.6rem;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.03rem;
+	font-size: 0.24rem;
+	border: none;
+}
+.jy_kcjscon h2{
+	font-size: 0.26rem;
+	color: #af3a01;
+	line-height: 0.6rem;
+	letter-spacing: 0.04rem;
+	padding-top: 0.3rem;
+	font-weight: 600;
+}
+.jy_kcjscon img{
+	width: 3.72rem;
+	height: 3.68rem;
+	margin-top: 0.5rem;
+	margin-left: 1.77rem;
+	clear: both;
+}
+.jy_school{
+	background: #ff9e1d;
+	overflow: hidden;
+	
+}
+.jy_school img{
+	width: 6.9rem;
+	float: left;
+	margin-left: 0.3rem;
+	border-radius: 10px;
+	margin-bottom: 0.27rem;
+}
+
+.jy_kcjs1{
+	background: #34a5ed;
+	overflow: hidden;
+}
+.jy_kcjs1>h2{
+	font-size: 0.4rem;
+	line-height: 0.6rem;
+	letter-spacing: 0.04rem;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 0.3rem;
+}
+.jy_kcjs1 img{
+	float: left;
+	margin-top: 0.13rem;
+}
+.jy_kcjscon1{
+	width: 6.9rem;
+	margin-left: 0.3rem;
+	margin-top: 0.4rem;
+	background: #c5ecff;
+	border-radius: 10px;
+	text-align: center;
+}
+.jy_kcjscon1 p{
+	width: 5.95rem;
+	margin: 0 auto;
+	padding-top: 0.4rem;
+	padding-bottom: 0.35rem;
+	font-size: 0.26rem;
+	line-height: 0.41rem;
+	color: #323232;
+	text-indent: 2em;
+	letter-spacing: 0.03rem;
+	text-align: left;
+}
+.jy_kcjscon1 button{
+	width: 3.6rem;
+	height: 0.6rem;
+	border-radius: 50px;
+	background: #f39800;
+	line-height: 0.6rem;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.03rem;
+	font-size: 0.24rem;
+	border: none;
+	margin-bottom: 0.43rem;
+}
+.jy_kcjscon1 h2{
+	font-size: 0.26rem;
+	color: #3981d9;
+	line-height: 0.6rem;
+	letter-spacing: 0.04rem;
+	padding-top: 0.15rem;
+	font-weight: 600;
+}
+.jy_kcjs2 .jy_nrimg,.jy_kcjs1 .jy_nrimg{
+	width: 6.9rem;
+	float: left;
+	margin-left: 0.3rem;
+	border-radius: 10px;
+	margin-bottom: 0.27rem;	
+	margin-top: 0.45rem;
+}
+.jy_kcjs2{
+	background: #00479d;
+	overflow: hidden;
+}
+.jy_kcjs2>h2{
+	font-size: 0.4rem;
+	line-height: 0.6rem;
+	letter-spacing: 0.04rem;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 0.3rem;
+}
+.jy_kcjs2 img{
+	float: left;
+	margin-top: 0.13rem;
+}
+.jy_kcjscon2{
+	width: 6.9rem;
+	margin-left: 0.3rem;
+	margin-top: 0.4rem;
+	background: #daebff;
+	border-radius: 10px;
+	text-align: center;
+}
+.jy_kcjscon2 p{
+	width: 5.95rem;
+	margin: 0 auto;
+	padding-top: 0.4rem;
+	padding-bottom: 0.35rem;
+	font-size: 0.26rem;
+	line-height: 0.41rem;
+	color: #323232;
+	text-indent: 2em;
+	letter-spacing: 0.03rem;
+	text-align: left;
+}
+.jy_kcjscon2 button{
+	width: 3.6rem;
+	height: 0.6rem;
+	border-radius: 50px;
+	background: #f39800;
+	line-height: 0.6rem;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.03rem;
+	font-size: 0.24rem;
+	border: none;
+	margin-bottom: 0.43rem;
+	margin-top: 0.55rem;
+}
+.jy_kcjscon2 h2{
+	font-size: 0.26rem;
+	color: #3981d9;
+	line-height: 0.6rem;
+	letter-spacing: 0.04rem;
+	padding-top: 0.15rem;
+	font-weight: 600;
+}
+.jy_spah2{
+	font-size: 0.3rem;
+	color: white;
+	letter-spacing: 0.025rem;
+	line-height: 0.3rem;
+	margin-bottom: 0.5rem;
+}
+/*基地页面*/
+.jd_con{
+	background: #fcf3e6;
+	overflow: hidden;
+}
+.jd_ppp{
+	width: 6.95rem;
+	margin: 0.35rem auto;
+	font-size: 0.26rem;
+	line-height: 0.41rem;
+	color: #323232;
+	text-indent: 2em;
+	letter-spacing: 0.03rem;
+}
+.jd_img{
+	width: 6.9rem;
+	float: left;
+	margin-left: 0.3rem;
+}
+.ribbon {
+	margin-left: 0.3rem;
+	width:1.6rem;
+	height:0;
+	border-top:0.3rem solid #d90035;
+	border-bottom:0.3rem solid #d90035;
+	border-right:0.255rem solid transparent;
+	color: white;
+	line-height:0px;
+	font-size: 0.3rem;
+	letter-spacing: 0.03rem;
+	font-weight: 600;
+	padding-left: 0.4rem;
+	margin-top: 0.55rem;
+	margin-bottom: 0.35rem;
+}
