@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<script type="text/javascript" src="js_other/jquery-1.7.2.min.js"></script>
+	<style type="text/css">
+	iframe{
+		display: none !important;
+	}
+	.sy{
+		background: linear-gradient(135deg, #ffd800 25%, #ffb900 0, #ffb900 50%, #ffd800 0, #ffd800 75%, #ffb900 0); background-size: 20px 20px;
+		width: 700px;
+		height: 700px;
+	}
+.trapezium {
+  border-top: 100px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+
+  
+}
+	</style>
+</head>
+<body>
+<div class="trapezium"> nihao</div>
+	<div class="sy">
+		<iframe src="xzxz.html" width="500" height="500"></iframe>
+	</div>
+	<button class="but">点我模拟自动弹出广告</button>
+</body>
+
+<script type="text/javascript">
+	var boarddiv = '<iframe src="dqdq.html" width="500" height="500" style="display: block;"></iframe>'; 
+	$(window).load(function(){
+	$('.but').click(function(){
+	$('.sy').append(boarddiv);
+	alert(1);
+	
+	$("iframe").css("cssText", "display:block !important;");
+})
+});
+
+</script>
+</html>

@@ -2469,7 +2469,7 @@ input::-webkit-input-placeholder {
 	border: none;
 }
 .jy_kcjscon h2{
-	font-size: 0.26rem;
+	font-size: 0.28rem;
 	color: #af3a01;
 	line-height: 0.6rem;
 	letter-spacing: 0.04rem;
@@ -2547,7 +2547,7 @@ input::-webkit-input-placeholder {
 	margin-bottom: 0.43rem;
 }
 .jy_kcjscon1 h2{
-	font-size: 0.26rem;
+	font-size: 0.28rem;
 	color: #3981d9;
 	line-height: 0.6rem;
 	letter-spacing: 0.04rem;
@@ -2614,7 +2614,7 @@ input::-webkit-input-placeholder {
 	margin-top: 0.55rem;
 }
 .jy_kcjscon2 h2{
-	font-size: 0.26rem;
+	font-size: 0.28rem;
 	color: #3981d9;
 	line-height: 0.6rem;
 	letter-spacing: 0.04rem;
@@ -2662,4 +2662,200 @@ input::-webkit-input-placeholder {
 	padding-left: 0.4rem;
 	margin-top: 0.55rem;
 	margin-bottom: 0.35rem;
+}
+/*安检页面*/
+.aj_con{
+	background: #2b0b54;
+	overflow: hidden;
+}
+.aj_con1{
+	width: 6.8rem;
+	margin-left: 0.3rem;
+	border: 0.05rem dotted #e52c7a;
+	border-radius: 5px;
+	margin: 0.5rem auto 0.3rem auto;
+	padding: 0.3rem 0 0.25rem 0;
+}
+.aj_tp{
+	color: white;
+	font-size: 0.26rem;
+	line-height: 0.38rem;
+	text-indent: 2em;
+	width: 6.1rem;
+	margin: 0 auto;
+}
+.aj_img{
+	float: left;
+	width: 100%;
+}
+.aj_con2{
+	width: 6.9rem;
+	margin-left: 0.3rem;
+	border-radius: 5px;
+	margin: 0.5rem auto 0.3rem auto;
+	background: linear-gradient(135deg, #ffd800 25%, #ffb900 0, #ffb900 50%, #ffd800 0, #ffd800 75%, #ffb900 0); background-size: 0.2rem 0.2rem;
+	overflow: hidden;
+}
+.aj_con2_cl{
+	width: 6.6rem;
+	margin: 0.15rem;
+	background: #fdf3ae;
+	overflow: hidden;
+}
+.aj_tp1{
+	color: #2b0b54;
+	font-size: 0.26rem;
+	line-height: 0.38rem;
+	text-indent: 2em;
+	width: 5.95rem;
+	margin: 0 auto;
+	padding: 0.4rem 0 0.2rem 0;
+}
+.aj_con2_cl>button{
+	width: 2.9rem;
+	height: 0.5rem;
+	background: #e52c7a;
+	border-radius: 50px;
+	color: white;
+	border: none;
+	margin-left: 1.91rem;
+	margin-bottom: 0.21rem;
+	font-size: 0.24rem;
+	line-height: 0.5rem;
+	letter-spacing: 0.04rem;
+}
+.ja_leri{
+	margin-top: 0.45rem;
+	overflow: hidden;
+}
+.ja_leri p{
+	display: block;
+	float: left;
+}
+.ja_leri p:first-child{
+	font-size: 0.3rem;
+	line-height: 0.38rem;
+	color: #2B0B54;
+	letter-spacing: 0.02rem;
+	width: 3.2rem;
+	margin-left: 0.55rem;
+	text-align: center;
+
+}
+.ja_leri p:last-child{
+	background: #ffb901;
+	color: #29292a;
+	border-radius: 5px;
+	font-size: 0.3rem;
+	line-height: .56rem;
+	width: 2rem;
+	height: 0.56rem;
+	text-align: center;
+	margin-left: 0.55rem;
+	margin-top: 0.1rem;
+}
+.aj_botw{
+	text-align: center;
+	width: 6.9rem;
+	margin-left: 0.3rem;
+	border: 0.03rem dashed #e52c7a;	
+	margin-top: 0.8rem;
+	margin-bottom: 0.6rem;
+	position: relative;
+}
+.aj_botw>span{
+	display: block;
+	width: 3rem;
+	height: 0.67rem;
+	border: 0.03rem solid #ffd800;
+	border-radius: 50px;
+	background: #fffadc;
+	font-size: 0.36rem;
+	color: #2b0b54;
+	line-height: 0.67rem;
+	font-weight: 600;
+	letter-spacing: 0.03rem;
+	margin-left: 0.4rem;
+}
+.aj_botw>p{
+	font-size: 0.26rem;
+	line-height: 0.38rem;
+	padding: 0.4rem 0 0.5rem 0;
+	width: 6.22rem;
+	margin: 0 auto;
+	letter-spacing: 0.03rem;
+	text-align: left;
+	color: white;
+}
+.aj_botw:after{
+	display: block;
+    content:'';
+    clear: both;
+    height:0;
+}
+.aj_botw>div{
+	float: left;
+}
+.aj_botw>img{
+	width: 5rem;
+	height: 0.63rem;
+	position: absolute;
+	top: -0.315rem;
+	left: 0.95rem;
+}
+.aj_botw>button{
+	width: 2.9rem;
+	height: 0.5rem;
+	background: #e52c7a;
+	border-radius: 50px;
+	color: white;
+	border: none;
+	margin-bottom: 0.4rem;
+	font-size: 0.24rem;
+	line-height: 0.5rem;
+	letter-spacing: 0.04rem;
+	margin-top: 0.8rem;	
+}
+.aj_one{
+	width: 1.55rem;
+	margin-top: 0.88rem;
+}
+.aj_one div{
+	margin: 0 auto;
+}
+.aj_one div:nth-child(odd){
+	background: #fffadc;
+	border: 0.03rem solid #ffd800;
+	border-radius: 200px;
+	width: 1.12rem;
+	height: 1.12rem;
+	line-height: 1.12rem;
+	font-size: 0.27rem;
+	color: #2b0b54;
+	letter-spacing: 0.03rem;
+}
+.aj_one div:nth-child(even){
+	border: 0.03rem solid #ffd800;
+	border-top: none;border-bottom: none;
+	width: 0.02rem;
+	height: 0.58rem;
+	background: #fffadc;
+}
+.aj_two{
+	width: 5.35rem;
+	height: 8.22rem;
+    margin-top: 0.88rem;
+}
+.aj_two>div{
+	height: 1.644rem;
+	text-align: left;
+	color: #fef7f7;
+	font-size: 0.26rem;
+	line-height: 0.41rem;
+	letter-spacing: 0.03rem;
+	margin-left: 0.25rem;
+	margin-right: 0.2rem;
+	display:flex;
+	justify-content: left;
+	 align-items:center;
 }
