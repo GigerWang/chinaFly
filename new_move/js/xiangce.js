@@ -18,16 +18,24 @@ $(document).ready(function(){
 })
 
 $('.show_picz').children('.show_pic').click(function(){
-	var abc = $(this).index()-1;
-	$('.pingzhang').children('.showpicone').css({'height':'0','overflow': 'hidden'});
-	$('.pingzhang').children('.showpicone').eq(abc).css('height','auto');
-	s1=$('.pingzhang').children('.showpicone').eq(abc).children('.swiper_con');
-})
-});
-var mySwiper = new Swiper('.swiper-container',{
+				 var content = '';
+				 var content1 = '';
+			 for (var i=0;i<5;i++){
+				content+='<div class="swiper-slide" style="background-image: url('+'images/xy/xy_pic1.png'+');background-position: center;background-size: cover;"></div>';
+				content1+='<div>'+'sssss'+i+6+'</div>';
+			 }
+			$('.xyxy_show').html(content);
+			$('.swiper_con').html(content1);
+			s1=$('.pingzhang').children('.showpicone').children('.swiper_con');
+			s1.children('div').css('display','none');
+			s1.children('div').eq(s).css('display','block');
+			var mySwiper = new Swiper('.swiper-container',{
 onSlideChangeEnd: function(swiper){
 		s=swiper.activeIndex;
 		s1.children('div').css('display','none');
 		s1.children('div').eq(s).css('display','block');
     }
 })
+})
+});
+

@@ -32,17 +32,78 @@ var swiper = new Swiper('.swiper_three', {
 	centeredSlides : true,
 	slidesPerView:5
 });
+var tab1;
+var tab2;
+var tab3;
+var s ='{"employees": [{ "firstName":"John" , "lastName":"Doe" },{ "firstName":"Anna" , "lastName":"Smith" },{ "firstName":"Peter" , "lastName":"Jones" }]}'
 $(document).ready(function(){
 //	tab选项卡点击条件变色
 	$('.tho_right').children('a').click(function(){
 		$(this).addClass('a_clic').siblings('a').removeClass('a_clic');
+			 $('.tho_right').children('a').each(function(index,element){
+			 	if($(this).hasClass('a_clic')){
+			 		tab1=$(this).text();
+			 		}
+	 			})
+			 $('.tht_right').children('a').each(function(index,element){
+			 	if($(this).hasClass('a_clic')){
+			 		tab2=$(this).text();
+			 		}
+	 			})
+			 $('.thth_right').children('a').each(function(index,element){
+			 	if($(this).hasClass('a_clic')){
+			 		tab3=$(this).text();
+			 		}
+	 			})
+			 alert(tab1+tab2+tab3)
+			 console.log(JSON.parse(s));
 	});
 	$('.tht_right').children('a').click(function(){
 		$(this).addClass('a_clic').siblings('a').removeClass('a_clic');
+		$('.tho_right').children('a').each(function(index,element){
+			 	if($(this).hasClass('a_clic')){
+			 		tab1=$(this).text();
+			 		}
+	 			})
+			 $('.tht_right').children('a').each(function(index,element){
+			 	if($(this).hasClass('a_clic')){
+			 		tab2=$(this).text();
+			 		}
+	 			})
+			 $('.thth_right').children('a').each(function(index,element){
+			 	if($(this).hasClass('a_clic')){
+			 		tab3=$(this).text();
+			 		}
+	 			})
+			 var content = '';
+			 for (var i=0;i<s.length;i++){
+				content+='<div class="tc_chil_fire"><div class="fire_left"><img src="'+s[i].s_img+'"/></div><div class="fire_cen"><div class="school_name"><h3>'+s[i].s_name+'</h3><img src="images/index/fire.jpg" alt="" class="picshan" /></div><div class="school_cen"><p>'+s[i].s_advantage+'</p></div></div><div class="fire_ri"><a href="#" class="school_but1">在线咨询</a><a href="#" class="school_but2">在线咨询</a></div></div>';
+				}
+			$('.tab_cont').html(content)
 	});
 	$('.thth_right').children('a').click(function(){
 		$(this).addClass('a_clic').siblings('a').removeClass('a_clic');
+		$('.tho_right').children('a').each(function(index,element){
+			 	if($(this).hasClass('a_clic')){
+			 		tab1=$(this).text();
+			 		}
+	 			})
+			 $('.tht_right').children('a').each(function(index,element){
+			 	if($(this).hasClass('a_clic')){
+			 		tab2=$(this).text();
+			 		}
+	 			})
+			 $('.thth_right').children('a').each(function(index,element){
+			 	if($(this).hasClass('a_clic')){
+			 		tab3=$(this).text();
+			 		}
+	 			})
+			 alert(tab1+tab2+tab3)
 	});
+
+	
+	
+	
 //	视频tab选项卡
 	$('.tcl_nav').click(function(){
 		$(this).addClass('tcl_nav1').siblings('div').removeClass('tcl_nav1');

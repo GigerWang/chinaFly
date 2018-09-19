@@ -1,0 +1,36 @@
+#bdshare ul, #bdshare_s ul{ float:none;}
+dl.share_link{  padding-left: 33px; border-top:1px solid #e4e4e4; padding-top:15px; position:relative; height:134px;}
+dl.share_link dt{ font-size:12px; color:#012f6f; height:40px; line-height:40px; margin-bottom:10px;} 
+dl.share_link dd{ height:50px; line-height:50px;}
+dl.share_link dd img{ float:left; margin-right:10px;}
+dl.share_link dd a{ height:18px; line-height:18px; display:block; float:left;color:#012f6f; background:none;}
+dl.share_link dd a:hover{ background-color:#fff;}
+
+.bdsharebuttonbox{ padding-left:0px; position:relative;}
+.bdsharebuttonbox span{ padding-left:20px; line-height:25px;}
+
+.bdsharebuttonbox ul li.libd_more{ background:url(../images/fenxiang.jpg)/*tpa=http://www.cnu.edu.cn/images/fenxiang.jpg*/ no-repeat; width:90px; height:30px; display:block;}
+.bdsharebuttonbox ul li.libds_tsina{ background:url(../images/share_sina.jpg)/*tpa=http://www.cnu.edu.cn/images/share_sina.jpg*/ no-repeat; width:90px; height:30px; display:block;}
+.bdsharebuttonbox ul li.libds_tsina a{ height:20px; padding:0px;}
+.bdsharebuttonbox ul li.libds_qzone{ background:url(../images/share_weixin.jpg)/*tpa=http://www.cnu.edu.cn/images/share_weixin.jpg*/ no-repeat; width:90px; height:30px; display:block;}
+.bdsharebuttonbox ul li.libds_weixin{ background:url(../images/qqweibo.jpg)/*tpa=http://www.cnu.edu.cn/images/qqweibo.jpg*/ no-repeat; width:90px; height:30px; display:block;}
+
+#bdshare ul li a, #bdshare_s ul li a {
+    border: 1px solid #fff;
+    color: #565656;
+    display: block;
+    font: 12px "宋体";
+    padding: 6px 0;
+    text-indent: 0;
+    width: 98%;
+	text-align:left;
+	border:none;
+}
+#bdshare ul li{ width:60PX; padding-left:40PX;}
+#bdshare ul li a:hover, #bdshare_s ul li a:hover{ background:none;border:none;}
+
+#bdshare_pop{ position:fixed}
+.weixin{ position:absolute; right:0px; bottom:3px; z-index:999999; width:85px;height:27px; line-height:27px;background:url(../images/share_weixin.jpg)/*tpa=http://www.cnu.edu.cn/images/share_weixin.jpg*/ no-repeat; padding-left:40px;}
+.weixin a span { font-size:12px; color:#565656; height:27px; line-height:27px; font-family:"宋体"; cursor:pointer}
+
+#jiathis_weixin_tip{ display:none;}

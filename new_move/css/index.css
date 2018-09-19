@@ -236,7 +236,8 @@ to { left: 320px; top: 400px; }
 }
 .school_name h3{
 	float: left;
-	font-size: 0.32rem;
+	font-size: 0.2rem;
+	margin-top: 0.09rem;
 	font-weight: 600;
 }
 .school_name img{
@@ -400,6 +401,20 @@ to { left: 320px; top: 400px; }
 .fh_left{
 	width: 3.46rem;
 	position: relative;
+}
+.fh_left .fha1{
+	width: 1.55rem;
+	height: 0.4rem;
+	position: absolute;
+	left: 0.21rem;
+	top: 2.5rem;
+}
+.fh_left .fha2{
+	width: 1.55rem;
+	height: 0.4rem;
+	position: absolute;
+	left: 0.21rem;
+	bottom: 1rem;
 }
 .fh_left img{
 	width: 100%;
@@ -757,7 +772,7 @@ input::-webkit-input-placeholder {
 /*底部导航*/
 .footer_n{font-size: 0.24rem; text-align: center;width: 7.5rem;z-index: 999;}
 .footer_left{ height: 1.3rem;  background:#eeeeee; display: flex;align-items:center;ustify-content:center;flex-direction:column;}
-.footer_left p{text-align:center;color: #939292;font-size: 0.24rem;}
+.footer_left p{text-align:center;color: #607ef0;font-size: 0.24rem;}
 .col-xs-3{
 	width: 25%
 }
@@ -766,7 +781,7 @@ input::-webkit-input-placeholder {
 }
 .footer_left .more_i{
 	font-size: 0.6rem;
-	color: #939292;
+	color: #607ef0;
 	margin-top: 0.18rem;
 }
 .index_search{

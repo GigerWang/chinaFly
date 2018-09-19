@@ -2859,3 +2859,83 @@ input::-webkit-input-placeholder {
 	justify-content: left;
 	 align-items:center;
 }
+/*院校视频*/
+.sp_box{
+	margin: 0.2rem 0;
+	width: 6.9rem;
+	margin-left: .3rem;
+	width: 6.9rem;
+	height: 4.05rem;
+}
+.sp_box video{
+	width: 6.9rem;
+	height: 3.5rem;
+}
+.sp_box h2{
+	font-size: 0.36rem;
+	font-weight: 600;
+	letter-spacing: 0.04rem;
+	text-align: left;
+	line-height: 0.4rem;
+	margin-bottom: 0.15rem;
+	color: #607ef0;
+	
+}
+/*在线测试*/
+.zxcs{
+    background: -moz-linear-gradient(top, #3a2b51 0%, #0f4282 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a2b51), color-stop(100%,#0f4282));
+    background: -webkit-linear-gradient(top, #3a2b51 0%,#0f4282 100%);
+    background: -o-linear-gradient(top, #3a2b51 0%,#0f4282 100%);
+    background: -ms-linear-gradient(top, #3a2b51 0%,#0f4282 100%);
+    background: linear-gradient(to bottom, #3a2b51 0%,#0f4282 100%);
+}
+.zxcs img{
+	width: 100%;
+	float: left;
+}
+.cs_con1{
+	width: 6.9rem;
+	border: 1px dashed white;
+	margin-left: 0.3rem;
+	margin-top: 0.65rem;
+	border-radius: 5px;
+}
+.cs_con1 p{
+	padding: 0.2rem 0.1rem 0.2rem 0.1rem;
+	font-size: 0.22rem;
+	color: white;
+	letter-spacing: 0.02rem;
+	line-height: 0.33rem;
+}
+.cs_con1 span{
+	font-size: 0.26rem;
+}
+.bmch_rii{
+	width: 5.4rem;
+	height: 0.8rem;
+	float: left;
+}
+.bmch_rii input{
+	float: left;
+	border: none;
+	border-radius: 10px;
+	width: 2.6rem;
+	height: 0.8rem;
+	color:#757575;
+   font-size: 0.34rem;
+   letter-spacing: 0.03rem;
+}
+.bmch_rii>button{
+	border: none;
+	background: #ffa11b;
+	border-radius: 10px;
+	width: 2.6rem;
+	margin-left: 0.2rem;
+	height: 0.8rem;
+   font-size: 0.34rem;
+   letter-spacing: 0.03rem;
+   color: white;
+   padding: 0;
+   float: left;
+}

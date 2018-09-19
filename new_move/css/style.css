@@ -71,4 +71,110 @@ table {
 	width: 100%;
 	background: #edecea;
 }
-
+.right_down{
+	animation:myfirst 2s;
+	-moz-animation:myfirst 2s; /* Firefox */
+	-webkit-animation:myfirst 2s; /* Safari and Chrome */
+	-o-animation:myfirst 2s; /* Opera */
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite; /* Safari 氓鈥�?Chrome */
+	}
+	@keyframes myfirst
+	{
+	0%   {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	50% {
+		transform: scale(0.8,0.8);
+		-ms-transform: scale(0.8,0.8);	/* IE 9 */
+		-webkit-transform: scale(0.8,0.8);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(0.8,0.8);	/* Opera */
+		-moz-transform: scale(0.8,0.8);	/* Firefox */
+	}
+	100% {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	}
+	
+	@-moz-keyframes myfirst /* Firefox */
+	{
+	0%   {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	50% {
+		transform: scale(0.8,0.8);
+		-ms-transform: scale(0.8,0.8);	/* IE 9 */
+		-webkit-transform: scale(0.8,0.8);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(0.8,0.8);	/* Opera */
+		-moz-transform: scale(0.8,0.8);	/* Firefox */
+	}
+	100% {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	}
+	
+	@-webkit-keyframes myfirst /* Safari and Chrome */
+	{
+	0%   {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	50% {
+		transform: scale(0.8,0.8);
+		-ms-transform: scale(0.8,0.8);	/* IE 9 */
+		-webkit-transform: scale(0.8,0.8);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(0.8,0.8);	/* Opera */
+		-moz-transform: scale(0.8,0.8);	/* Firefox */
+	}
+	100% {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	}
+	
+	@-o-keyframes myfirst /* Opera */
+	{
+	0%   {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	50% {
+		transform: scale(0.8,0.8);
+		-ms-transform: scale(0.8,0.8);	/* IE 9 */
+		-webkit-transform: scale(0.8,0.8);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(0.8,0.8);	/* Opera */
+		-moz-transform: scale(0.8,0.8);	/* Firefox */
+	}
+	100% {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	}
