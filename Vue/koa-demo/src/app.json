@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/main",
+	"pages/todolist/main",
+    "pages/abc/main", 
+	"pages/logs/main",
+    "pages/counter/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "mpvue-demo",
+    "navigationBarTextStyle": "black"
+  }
+}

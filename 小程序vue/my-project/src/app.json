@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/logs/main",
+    "pages/counter/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#607ef0",
+    "navigationBarTitleText": "wpVue",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#ffa11b"
+  },
+  "tabBar": {
+	    "color": "#ff2605",
+	    "selectedColor": "#e5624a",
+	    "borderStyle": "black",
+	    "backgroundColor": "#f6f8f9",
+	    "list": [
+	      {
+	        "pagePath": "pages/index/main",
+	        "iconPath": "images/_收藏.png",
+	        "selectedIconPath": "images/_收藏2.png",
+	        "text": "Hi"
+	      },
+	      {
+	        "pagePath": "pages/index/main",
+	        "iconPath": "images/榜单.png",
+	        "selectedIconPath": "images/榜单2.png",
+	        "text": "Yeah"
+	      },
+	      {
+	        "pagePath": "pages/index/main",
+	        "iconPath": "images/感谢.png",
+	        "selectedIconPath": "images/感谢2.png",
+	        "text": "Ha"
+	      },
+	      {
+	        "pagePath": "pages/index/main",
+	        "iconPath": "images/景点.png",
+	        "selectedIconPath": "images/景点2.png",
+	        "text": "Enheng"
+	      },
+	      {
+	        "pagePath": "pages/index/main",
+	        "iconPath": "images/喜欢.png",
+	        "selectedIconPath": "images/喜欢2.png",
+	        "text": "Hong"
+	      }
+	    ]
+	  }
+}

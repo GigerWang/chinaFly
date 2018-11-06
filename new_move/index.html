@@ -27,6 +27,9 @@
 <body>
 <!--头部固定开始-->
 <div class="container remove_over">
+	<div class="fix_footer_newhead wow slideInUp">
+		<img src="images/footer_con.png" alt="" />
+	</div>
 	<div class="fix_footer wow slideInUp">
 		<div id="nav_meau" class="fix_footer_left wow slideInLeft">
 			<i class="fa fa-list-ul" aria-hidden="true"></i>
@@ -541,7 +544,7 @@
 			<div class="stu_name">
 				<span>1覃杉 </span><span>空乘</span>
 			</div>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是毕业与上海交通大学的一名空乘专业学生覃杉，经过别人介绍选择了上海交通大学空乘专业，既拿到了毕业证，还分配到浦东机场上班的正式工作。</p>
+			<p style="display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是毕业与上海交通是毕业与上海交通是毕业与上海交通是毕业与上海交通是毕业与上海交通是毕业与上海交通是毕业与上海交通是毕业与上海交通是毕业与上海交通是毕业与上海交通是毕业与上海交通大学的一名空乘专业学生覃杉，经过别人介绍选择了上海交通大学空乘专业，既拿到了毕业证，还分配到浦东机场上班的正式工作。</p>
 			<img src="images/index/become_she.jpg"/>
 		</div>
 		<div class="student1" style="display: none;">
@@ -723,6 +726,11 @@
 	</div>
 </div>
 <div class="container">
+	<div class="row">
+		<img src="images/footer111.png" style="width: 100%;"/>
+	</div>
+</div>
+<div class="container">
 	<p style="width: 2.5rem; padding: 0.1rem 0; margin: 0 auto;text-align: center;">版权所有xxxxxx  <br />啊哈哈哈哈哈哈</p>
 </div>
 <style>
@@ -757,6 +765,37 @@
 		</a>
 	</div>
 </div>
+<link rel="stylesheet" href="css/leyu.css" />
+<div id="al_main">
+	<div id="al_img">
+		<img src="images/aj/aj_banner.jpg" >
+		<a href="?r=site/online" class="al_online"></a>
+		<a href="#" onclick="doyoo.util.openChat('g=10053707');return false;" class="al_djzx"></a>
+		<div class="al_close"></div>
+	</div>
+</div>
+	<div class="con_ss" style="z-index:99999">
+        <div class="right_title">
+            <a href="#" onclick="doyoo.util.openChat('g=10053707');return false;"><img src="images/pc/kefu.png"/></a>
+        </div>
+        <div class="right_down1 right_down">
+            <a href="?r=site/test"><img src="images/pc/kjcs.png"/></a>
+        </div>  
+    </div>
+
+<script type="text/javascript">
+    var alNum = 1;
+    var alObject = $("#al_img");
+        alObject.delay(4000).fadeIn(); 
+    $(".al_close").click(function(){
+        alObject.hide();
+        alNum++;
+        if(alNum<=6){  
+            alObject.find("img").attr("src",'images/plane.gif');
+            alObject.delay(18000).fadeIn();
+        }
+    })
+</script>
 </body>
 <script type="text/javascript" src="js/perform.js"></script>
 </html>

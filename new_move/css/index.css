@@ -1,11 +1,24 @@
 /*首页*/
+.fix_footer_newhead{
+	z-index: 999;
+	height: 2rem;
+	background: #ebebeb;
+	height: 0.7rem;
+	position: fixed;
+	top: 0;
+	width: 7.5rem;
+}
+.fix_footer_newhead img{
+	width: 2.55rem;
+	margin: 0.15rem 2.475rem;
+}
 .fix_footer{
 	z-index: 999;
 	height: 2rem;
 	background: #eeeeee;
 	height: 0.9rem;
 	position: fixed;
-	top: 0;
+	top: 0.68rem;
 }
 .fix_footer div{
 	float: left;
@@ -44,7 +57,7 @@
 .swiper_custom{
 	width: 100%;
 	/*height: 3.6rem;*/
-	margin-top:0.9rem;
+	margin-top:1.58rem;
 	overflow: hidden;
 }
 .swiper-container {
@@ -788,7 +801,7 @@ input::-webkit-input-placeholder {
 	position: fixed;
 	left: 50%;
 	margin-left: -3.75rem;
-	top: 0.9rem;
+	top: 1.58rem;
 	height: 0.9rem;
 	z-index: 999;
 	background: rgba(238,238,238,0.6);

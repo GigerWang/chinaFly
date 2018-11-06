@@ -1,0 +1,12 @@
+{
+	"client": "client/",
+	"svr": "server/",
+	"miniprogramRoot": "client/",
+	"qcloudRoot": "server/",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wxbd518ce1ac8dd2d6",
+	"projectname": "vue-node-little-demo",
+	"condition": {}
+}
