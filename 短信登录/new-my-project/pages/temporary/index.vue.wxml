@@ -1,0 +1,7 @@
+<template name="68073e8b">
+  <view class="_div data-v-055a61d6 box">
+    <view class="_div data-v-055a61d6 enter">
+      <view class="_div data-v-055a61d6 uesr"><input placeholder="nihao" type="text" cursor="20" cursor-spacing="15" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-055a61d6" /></view>
+    </view>
+  </view>
+</template>

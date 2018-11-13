@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<script type="text/javascript" src="../../H5/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		// (function (doc, win) {
+//	var docEl = doc.documentElement,
+//	resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+//	recalc = function () {
+//	var clientWidth = docEl.clientWidth;
+//	if (!clientWidth) return;
+//	if(clientWidth>=750){
+//	docEl.style.fontSize = '100px';
+//	}else{
+//	docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+//	}
+//	};
+//	
+//	
+//	if (!doc.addEventListener) return;
+//	win.addEventListener(resizeEvt, recalc, false);
+//	doc.addEventListener('DOMContentLoaded', recalc, false);
+//	})(document, window);
+//designWidth:设计稿的实际宽度值，需要根据实际设置
+//maxWidth:制作稿的最大宽度值，需要根据实际设置
+//这段js的最后面有两个参数记得要设置，一个为设计稿实际宽度，一个为制作稿最大宽度，例如设计稿为750，最大宽度为750，则为(750,750)
+;(function(designWidth, maxWidth) {
+    var doc = document,
+    win = window,
+    docEl = doc.documentElement,
+    remStyle = document.createElement("style"),
+    tid;
+    //浏览器竖屏与横屏转换的BUG。
+    function refreshRem() {
+        var width = docEl.getBoundingClientRect().width;
+        maxWidth = maxWidth || 540;
+        width>maxWidth && (width=maxWidth);
+        var rem = width * 100 / designWidth;
+        remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+    }
+
+    if (docEl.firstElementChild) {
+        docEl.firstElementChild.appendChild(remStyle);
+    } else {
+        var wrap = doc.createElement("div");
+        wrap.appendChild(remStyle);
+        doc.write(wrap.innerHTML);
+        wrap = null;
+    }
+    //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+    refreshRem();
+
+    win.addEventListener("resize", function() {
+        clearTimeout(tid); //防止执行两次
+        tid = setTimeout(refreshRem, 300);
+    }, false);
+
+    win.addEventListener("pageshow", function(e) {
+        if (e.persisted) { // 浏览器后退的时候重新计算
+            clearTimeout(tid);
+            tid = setTimeout(refreshRem, 300);
+        }
+    }, false);
+
+    if (doc.readyState === "complete") {
+        doc.body.style.fontSize = "16px";
+    } else {
+        doc.addEventListener("DOMContentLoaded", function(e) {
+            doc.body.style.fontSize = "16px";
+        }, false);
+    }
+})(750, 750);
+	</script>
+	<style type="text/css">
+		#al_main{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	max-width: 640px;min-width: 320px;
+}
+#al_img{
+	width:5.64rem;
+	/*修改*/
+	height:auto;
+	/*max-width: 640px;min-width: 300px;*/
+	/*修改*/	
+	position:fixed;
+	display:none;
+	 top: 50%;    
+    left: 50%;    
+    -moz-transform: translate(-50%, -50%);   
+    -ms-transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);    
+    transform: translate(-50%, -50%);
+	z-index:9999;
+}
+
+#al_img img{width:100%;float: left;}
+
+.al_djzx{
+	width:150px;
+	height:65px;
+	background:url(about:blank);
+	position:absolute;
+	bottom:0;
+	right:0;
+	cursor:pointer;
+	display:block;	
+}
+
+.al_close{
+	width:.8rem;
+	height:.8rem;
+	position:absolute;
+	top:0;
+	right:0;
+	cursor:pointer;
+}
+
+.al_online {
+	width:150px;
+	height:65px;
+	background:url(about:blank);
+	position:absolute;
+	bottom:0;
+	left:0;
+	cursor:pointer;
+	display:block;
+}
+
+.con_ss{width: 100px; height:auto; position: fixed; bottom: 0; right: 0; }
+.right_title{ width:1.17rem;height:0.59rem; position:absolute; bottom:3.5rem; right:0;z-index:999;}
+.right_down1{ width:1.17rem;height:0.59rem; position:absolute; bottom:2.5rem; right:0;z-index:999;}
+
+.right_title img,.right_down1 img{
+	width:1.17rem;height:0.59rem;
+}
+
+
+.right_down{
+animation:myfirst 2s;
+-moz-animation:myfirst 2s; /* Firefox */
+-webkit-animation:myfirst 2s; /* Safari and Chrome */
+-o-animation:myfirst 2s; /* Opera */
+animation-iteration-count:infinite;
+-webkit-animation-iteration-count:infinite; /* Safari 氓鈥�?Chrome */
+}
+@keyframes myfirst
+{
+0%   {
+    transform: scale(1.0,1.0);
+    -ms-transform: scale(1.0,1.0);  /* IE 9 */
+    -webkit-transform: scale(1.0,1.0);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(1.0,1.0);   /* Opera */
+    -moz-transform: scale(1.0,1.0); /* Firefox */
+}
+50% {
+    transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8);  /* IE 9 */
+    -webkit-transform: scale(0.8,0.8);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(0.8,0.8);   /* Opera */
+    -moz-transform: scale(0.8,0.8); /* Firefox */
+}
+100% {
+    transform: scale(1.0,1.0);
+    -ms-transform: scale(1.0,1.0);  /* IE 9 */
+    -webkit-transform: scale(1.0,1.0);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(1.0,1.0);   /* Opera */
+    -moz-transform: scale(1.0,1.0); /* Firefox */
+}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {
+    transform: scale(1.0,1.0);
+    -ms-transform: scale(1.0,1.0);  /* IE 9 */
+    -webkit-transform: scale(1.0,1.0);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(1.0,1.0);   /* Opera */
+    -moz-transform: scale(1.0,1.0); /* Firefox */
+}
+50% {
+    transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8);  /* IE 9 */
+    -webkit-transform: scale(0.8,0.8);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(0.8,0.8);   /* Opera */
+    -moz-transform: scale(0.8,0.8); /* Firefox */
+}
+100% {
+    transform: scale(1.0,1.0);
+    -ms-transform: scale(1.0,1.0);  /* IE 9 */
+    -webkit-transform: scale(1.0,1.0);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(1.0,1.0);   /* Opera */
+    -moz-transform: scale(1.0,1.0); /* Firefox */
+}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {
+    transform: scale(1.0,1.0);
+    -ms-transform: scale(1.0,1.0);  /* IE 9 */
+    -webkit-transform: scale(1.0,1.0);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(1.0,1.0);   /* Opera */
+    -moz-transform: scale(1.0,1.0); /* Firefox */
+}
+50% {
+    transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8);  /* IE 9 */
+    -webkit-transform: scale(0.8,0.8);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(0.8,0.8);   /* Opera */
+    -moz-transform: scale(0.8,0.8); /* Firefox */
+}
+100% {
+    transform: scale(1.0,1.0);
+    -ms-transform: scale(1.0,1.0);  /* IE 9 */
+    -webkit-transform: scale(1.0,1.0);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(1.0,1.0);   /* Opera */
+    -moz-transform: scale(1.0,1.0); /* Firefox */
+}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {
+    transform: scale(1.0,1.0);
+    -ms-transform: scale(1.0,1.0);  /* IE 9 */
+    -webkit-transform: scale(1.0,1.0);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(1.0,1.0);   /* Opera */
+    -moz-transform: scale(1.0,1.0); /* Firefox */
+}
+50% {
+    transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8);  /* IE 9 */
+    -webkit-transform: scale(0.8,0.8);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(0.8,0.8);   /* Opera */
+    -moz-transform: scale(0.8,0.8); /* Firefox */
+}
+100% {
+    transform: scale(1.0,1.0);
+    -ms-transform: scale(1.0,1.0);  /* IE 9 */
+    -webkit-transform: scale(1.0,1.0);  /* Safari 氓鈥�?Chrome */
+    -o-transform: scale(1.0,1.0);   /* Opera */
+    -moz-transform: scale(1.0,1.0); /* Firefox */
+}
+}
+	</style>
+</head>
+<body>
+	<style type="text/css">
+		.new_tk{
+			overflow: hidden;
+		}
+		.new_tk_01{
+			overflow: hidden;
+		}
+		.new_tk_01>img{
+			float: left;
+			width: 5.64rem;
+			height: 4.44rem;
+		}
+		.new_tk_02 {
+			float: left;
+			overflow: hidden;
+			margin-top: -1px;
+			text-align: center;
+			background: -webkit-linear-gradient(#eb9200, #eb6100); /* Safari 5.1 - 6.0 */
+			background: -o-linear-gradient(#eb8900, #eb6100); /* Opera 11.1 - 12.0 */
+			background: -moz-linear-gradient(#eb8900, #eb6100); /* Firefox 3.6 - 15 */
+			background: linear-gradient(#eb8900, #eb6100); /* 标准的语法 */
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+		.new_tk_02>input[type=text]{
+			border: none;
+			padding: 0;
+			margin: 0;
+			width: 4.55rem;
+			height: .67rem;
+			line-height: .67rem;
+			font-size: .26rem;
+			border-radius: 5px;
+			margin-bottom: .19rem;
+			padding-left: .27rem;
+		}
+		.new_tk_02>input[type=submit]{
+			background: -webkit-linear-gradient(left,#ff991f, #ffde1f); /* Safari 5.1 - 6.0 */
+			background: -o-linear-gradient(right,#ff991f, #ffde1f); /* Opera 11.1 - 12.0 */
+			background: -moz-linear-gradient(right,#ff991f, #ffde1f); /* Firefox 3.6 - 15 */
+			background: linear-gradient(to right,#ff991f, #ffde1f); /* 标准的语法 */
+			padding: 0;
+			margin: 0;
+			border: none;
+			border-radius: 5px;
+			width: 4.82rem;
+			height: .67rem;
+			line-height: .67rem;
+			color: white;
+			font-size: .32rem;
+			font-weight: bold;
+			margin-bottom: .3rem;
+			letter-spacing: .02rem;
+		}
+		input[type="submit"],input[type="reset"],input[type="button"],button {-webkit-appearance: none;}
+	</style>
+	<div id="al_main">
+	<div id="al_img">
+		<div class="new_tk">
+			<div class="new_tk_01">
+				<img src="tknew.png"/>
+			</div>
+			<div style="clear: both;"></div>
+			<div class="new_tk_02">
+				<input type="text" name="" id="" value="" placeholder="学生姓名"/>
+				<input type="text" name="" id="" value="" placeholder="联系方式"/>
+				<input type="text" name="" id="" value="" placeholder="学生身高"/>
+				<input type="text" name="" id="" value="" placeholder="学生体重"/>
+				<input type="text" name="" id="" value="" placeholder="学生性别"/>
+				<input class="tijiao" type="submit" name="" id="" value="立即报名" />
+			</div>
+		</div>
+		<!--<a href="?r=site/online" class="al_online"></a>
+		<a href="#" onclick="doyoo.util.openChat('g=10053707');return false;" class="al_djzx"></a>-->
+		<div class="al_close"></div>
+	</div>
+</div>
+	<div class="con_ss" style="z-index:99999">
+        <div class="right_title">
+            <a href="#" onclick="doyoo.util.openChat('g=10053707');return false;"><img src="images/pc/kefu.png"/></a>
+        </div>
+        <div class="right_down1 right_down">
+            <a href="?r=site/test"><img src="images/pc/kjcs.png"/></a>
+        </div>  
+    </div>
+    
+</body>
+<script type="text/javascript" src="hyj.js"></script>
+<script type="text/javascript">
+    var alNum = 1;
+    var alObject = $("#al_img");
+        alObject.delay(1000).fadeIn(); 
+    $(".al_close").click(function(){
+        alObject.hide();
+        alNum++;
+        if(alNum<=6){  
+            alObject.find("img").attr("src",'images/plane.gif');
+            alObject.delay(18000).fadeIn();
+        }
+    });
+    
+    $(document).ready(function(){
+    	var flag_new_tk;
+    	$('.tijiao').click(function(){
+    	$('.new_tk_02').children('input[type="text"]').each(function(){
+    		if($(this).val()==''){
+    			flag_new_tk = false;
+    		}else{
+    			flag_new_tk = true;
+    		};
+    	});
+    		if(!flag_new_tk){
+//  			console.log((/^1[346578]\d{9}$/.test($('.new_tk_02').children('input[type="text"]').eq(0).val())))
+				alert('请将信息填写完整')
+				alert((/^1[346578]\d{9}$/.test($('.new_tk_02').children('input[type="text"]').eq(1).val())));
+    		}else if(!(/^1[346578]\d{9}$/.test($('.new_tk_02').children('input[type="text"]').eq(1).val()))){
+    			alert('请填写正确的手机号格式')
+    		}
+    	})
+
+
+
+
+//		$(document).ready(function(){
+//			var list = sss.data.customers;
+//			var phone = 15944118716;
+//			var user = '曹旭';
+//			console.log(sss.data.customers);
+//			for (var i=0;i<list.length;i++)
+//					{
+//						if(phone==list[i].address.phone && list[i].user_name.indexOf(user)!=-1){
+//							console.log(list[i].address.id)
+//						}
+//					}
+//		})
+	
+    })
+</script>
+</html>

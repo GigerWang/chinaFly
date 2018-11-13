@@ -1,6 +1,6 @@
 <template>
   <div class="container" @click="clickHandle('test click', $event)">
-
+<div>哈哈哈哈哈</div>
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
       <div class="userinfo-nickname">
@@ -39,7 +39,7 @@ export default {
 
   methods: {
     bindViewTap () {
-      const url = 'pages/index/main'
+      const url = '../logs/main'
       wx.navigateTo({ url })
     },
     getUserInfo () {

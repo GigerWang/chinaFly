@@ -1,0 +1,23 @@
+@import "../../common/vendor.wxss";
+
+.box {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: pink;
+  background-image: url('http://123.56.181.149/test_wg/bj.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.enter {
+  width: 600rpx;
+  height: 500rpx;
+  background: pink;
+}
+.uesr {
+  border: 2rpx solid red;
+}
