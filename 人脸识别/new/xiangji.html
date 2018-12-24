@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Canvas绘制图像入门示例</title>
+</head>
+<body>
+
+<!-- 添加canvas标签，并加上红色边框以便于在页面上查看 -->
+<canvas id="myCanvas" width="400px" height="300px" style="border: 1px solid red;">
+您的浏览器不支持canvas标签。
+</canvas>
+
+<script type="text/javascript">
+//获取Canvas对象(画布)
+var canvas = document.getElementById("myCanvas");
+//简单地检测当前浏览器是否支持Canvas对象，以免在一些不支持html5的浏览器中提示语法错误
+if(canvas.getContext){  
+    //获取对应的CanvasRenderingContext2D对象(画笔)
+    var ctx = canvas.getContext("2d");
+    
+    //创建新的图片对象
+    var img = new Image();
+    //指定图片的URL
+    img.src = "data:image/png;base64,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";
+    //浏览器加载图片完毕后再绘制图片
+    img.onload = function(){
+        //以Canvas画布上的坐标(10,10)为起始点，绘制图像
+        //图像的宽度和高度分别缩放到350px和100px
+        ctx.drawImage(img, 10, 10, 100, 100);             
+    };
+}
+</script>
+</body>
+</html>

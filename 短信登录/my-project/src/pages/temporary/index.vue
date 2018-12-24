@@ -40,7 +40,7 @@ export default {
 methods:{
 	tryhaha(){
 		wx.switchTab({
-		  url: '../index/main'
+		  url: '../personal/main'
 		})
 		console.log(1111)
 	},

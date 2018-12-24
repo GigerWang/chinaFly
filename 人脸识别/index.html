@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<title>人脸识别</title>
+	<style type="text/css">
+		.face{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div  class="face">
+		haha
+	</div>
+</body>
+	<script type="text/javascript">
+		$('.face').click(function(){
+			console.log(1);
+			$.ajax({
+			   	type: "POST",
+			   	url: "https://api-cn.faceplusplus.com/imagepp/v1/mergeface",
+			   	dataType:'JSON',
+			   	data: {
+		   		"api_key":'XUBTlrWMiC46fUxxtXh9Vc1zjnVmvReu',
+			   	'api_secret':'AH2CzDowV2jLTBgyoVYGm5bRYQAiU1NE',
+			   	'template_url':'img/1.jpg',
+			   	'template_rectangle':'70,80,100,100',
+			   	'merge_url':'img/2.png',
+			   	'merge_rectangle':'0,0,206,206',
+			   	'merge_rate':'30'
+			   	},
+			   	success: function(msg){
+			   		console.log("开始，未成功");
+						console.log(msg);
+						console.log("开始，成功")
+			   	}
+			});
+
+	</script>
+				<!--$.ajax({
+			   	type: "POST",
+			   	url: "http://yuyue.flyingedu.cn/Home/Index/code",
+			   	dataType:'JSON',
+			   	data: {"phone":13333310172},
+			   	success: function(msg){
+			   		console.log("开始，未成功");
+						console.log(msg);
+						console.log("开始，成功")
+			   	}
+			});-->
+</html>

@@ -1,0 +1,260 @@
+<html>
+<head>
+    <title>Face++人脸融合Demo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    <div class="sk-wave-box">
+        <div class="sk-wave">
+            <div class="sk-rect sk-rect1"></div>
+            <div class="sk-rect sk-rect2"></div>
+            <div class="sk-rect sk-rect3"></div>
+            <div class="sk-rect sk-rect4"></div>
+            <div class="sk-rect sk-rect5"></div>
+        </div>
+        <span class="sk-word">正在上传中...</span>
+    </div>
+    
+    <input type="hidden" value="http://123.56.181.149/test_wg/111.jpg" class="input-image" />
+
+    <div align="center">
+        <table>
+            <tr>
+                <td id="td_img">
+                    <img src='images/blank.jpg' class='uploadpic' id="uploadpic" />  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<p style="color: red;display: none;" class="save">长按图片保存到本地</p>
+                	<span class="fileinput-button">
+			            <span>上传图片</span>
+			            <input id="fileUpload" type="file" /><br />
+			        </span>
+                    <!--<button type="button" class="button-upload">上传图片<input type="file" id="selectfiles" /></button>-->
+
+                    <button type="button" class="button-make">开始生成</button>
+
+                    <select class="select-model">
+                          <option value="0">下拉选择模版：图一</option>
+                          <option value="8">图二</option>
+                          <option value="25">图三</option>
+                          <option value="4">图四</option>
+                          <option value="23">图五</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--<img src='http://html5.rockstudio.cn/Demo/H5Demo/FaceplusplusMerge/images/0.jpg' class='model-image' />  <br/>（模版图片）-->
+                    <img src='http://139.224.3.138/face/gh.jpg' class='model-image' />  <br/>（模版图片）
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="image-holder"> </div>
+    <canvas id="myCanvas" width="400px" height="300px" style="border: 1px solid red; display: none;" >
+	您的浏览器不支持canvas标签。
+	</canvas>
+    
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/lib/crypto1/crypto/crypto.js"></script>
+    <script src="js/lib/crypto1/hmac/hmac.js"></script>
+    <script src="js/lib/crypto1/sha1/sha1.js"></script>
+    <script src="js/lib/base64.js"></script>
+    <script src="js/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
+
+
+    <script type="text/javascript">
+//  	
+//		function getImgToBase64(url,callback){//将图片转换为Base64
+//		  var canvas = document.createElement('canvas'),
+//		    ctx = canvas.getContext('2d'),
+//		    img = new Image;
+//		  img.crossOrigin = 'Anonymous';
+//		  img.onload = function(){
+//		    canvas.height = img.height;
+//		    canvas.width = img.width;
+//		    ctx.drawImage(img,0,0);
+//		    var dataURL = canvas.toDataURL('image/png');
+//		    callback(dataURL);
+//		    canvas = null;
+//		  };
+//		  img.src = url;
+//		}
+//		
+//		function dataURLtoFile(dataurl, filename) {//将base64转换为文件
+//	        var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+//	            bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+//	        while(n--){
+//	            u8arr[n] = bstr.charCodeAt(n);
+//	        }
+//	        return new File([u8arr], filename, {type:mime});
+//  	}
+//
+//			getImgToBase64('http://123.56.181.149/test_wg/333.jpg',function(x){
+//				console.log(dataURLtoFile(x,''))
+//				
+//						
+//			})
+//  	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+        $('.select-model').change(function(){
+        	
+            var strModel = 'https://www.faceplusplus.com.cn/scripts/demoScript/images/demo-pic' + $(this).val() + '.jpg';
+            
+//          var strModel = 'https://www.faceplusplus.com.cn/scripts/demoScript/images/demo-pic' + $(this).val() + '.jpg';
+            if($(this).val() == 0){
+              //strModel = 'http://html5.rockstudio.cn/Demo/H5Demo/FaceplusplusMerge/images/0.jpg';
+                
+              strModel = 'http://139.224.3.138/face/gh.jpg';
+            }
+            $('.model-image').attr('src', strModel); 
+        });  
+
+
+   var s = '';
+   var dataURL=''
+ 		$("#fileUpload").on('change', function (e) {
+ 			
+			    if (typeof (FileReader) != "undefined") {
+			        var image_holder = $("#td_img");
+			        image_holder.empty();
+			        var reader = new FileReader();
+			        reader.onload = function (e) {
+			        	s=e;
+						$.ajax({
+						   	type: "POST",
+						   	url: "http://139.224.3.138/face/face_imgs.php",
+						   	data: {"image":s.target.result},
+						   	success: function(msg){
+									$('.input-image').val(msg)
+									console.log('xxxxx',msg)
+									
+							
+					       	 // 人脸融合接口函数
+					        $('.button-make').click(function(){
+					            if($('.input-image').val() == ''){
+					                alert('请上传图片');
+					                return false;
+					            }
+					            $('.sk-word').html('正在生成中...');
+					            $('.sk-wave-box').show();
+					
+					            var templateRectangle;
+					            switch($('.select-model').val()){
+					                case '0':
+					                    templateRectangle = "143, 280, 126, 131";
+					                    break;
+					                case '8':
+					                    templateRectangle = "251, 167, 169, 169";
+					                    break;
+					                case '25':
+					                    templateRectangle = "173, 112, 245, 245";
+					                    break;
+					                case '4':
+					                    templateRectangle = "157, 133, 230, 230";
+					                    break;
+					                case '23':
+					                    templateRectangle = "147, 140, 198, 198";
+					                    break;
+					            }
+					
+					            var postData = 'api_key=SEXNF6k2XH25nej7gzq55CE-Z7wNfrh_&api_secret=c21mZXmDelXOiflIELfw9KXcm5QyWj2i&template_url=' 
+					            + $('.model-image')[0].src + '&template_rectangle=' + templateRectangle + '&merge_url=' + $('.input-image').val() + '&merge_rate=100';
+					
+					            $.ajax({
+					                dataType: 'json', 
+					                type: 'POST' ,
+					                url: 'https://api-cn.faceplusplus.com/imagepp/v1/mergeface',
+					                data: postData,
+					                success: function(response){ 
+					                    if(typeof(response.error_message) == "undefined"){
+					                        // todo: 在这里添加生成后的逻辑，response.result 为生成图的base64
+					                        $('.uploadpic').attr('src', 'data:image/jpg/png;base64,' + response.result); 
+					                        $('.save').css('display','block');
+					                        $('.sk-wave-box').hide();
+					                    }else{
+					                        // todo: 在这里添加上传失败的逻辑
+					                        alert('请重新上传照片');
+					                    } 
+					                    // todo: 在这里添加隐藏上传提示图层的逻辑
+					                    $('.sk-wave-box').hide();
+					                },
+					                error: function(xhr, status, error){
+					                    // todo: 在这里添加上传失败的逻辑
+					                    alert('请重新上传照片');
+					                    
+					                    // todo: 在这里添加隐藏上传提示图层的逻辑
+					                    $('.sk-wave-box').hide();
+					                }
+					            });  
+					        });
+					        
+					        
+						   	}
+						});
+			            $("<img />", {
+			                "src": e.target.result,
+			                "class": "uploadpic",
+			                "id":"uploadpic"
+			            }).appendTo(image_holder);
+			        }
+			        image_holder.show();
+			        reader.readAsDataURL($(this)[0].files[0]);
+			    } else {
+			        alert("你的浏览器不支持FileReader.");
+			    }
+			});  
+			
+//获取Canvas对象(画布)
+var canvas = document.getElementById("myCanvas");
+var MAX_HEIGHT = 100; 
+//简单地检测当前浏览器是否支持Canvas对象，以免在一些不支持html5的浏览器中提示语法错误
+if(canvas.getContext){  
+    //获取对应的CanvasRenderingContext2D对象(画笔)
+    var ctx = canvas.getContext("2d");
+    
+    //创建新的图片对象
+    var img = new Image();
+    //指定图片的URL
+    img.src = "";
+    //浏览器加载图片完毕后再绘制图片
+    img.onload = function(){
+    	if(img.height > MAX_HEIGHT) { 
+	    // 宽度等比例缩放 *= 
+	    img.width *= MAX_HEIGHT / img.height; 
+	    img.height = MAX_HEIGHT; 
+	    }
+        //以Canvas画布上的坐标(10,10)为起始点，绘制图像
+        //图像的宽度和高度分别缩放到350px和100px
+                // 重置canvas宽高 
+	    canvas.width = img.width; 
+	    canvas.height = img.height; 
+        ctx.clearRect(0, 0, canvas.width, canvas.height); 
+    // 将图像绘制到canvas上 
+    ctx.drawImage(img, 0, 0, img.width, img.height); 
+    var dataURL = canvas.toDataURL("image/png");
+    console.log(dataURL)
+    };
+}
+    </script>
+</body>
+</html>

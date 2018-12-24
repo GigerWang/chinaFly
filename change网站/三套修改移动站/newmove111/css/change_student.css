@@ -1,0 +1,104 @@
+.high_student{
+	background-image: url(../images/change_one/byyoushi.png); background-repeat: no-repeat; background-size:100% auto;
+}
+.choice_ideal_n_s {
+    margin-left: 33.333333335%;
+    margin-top: 0.7rem;
+}
+.choice_ideal{
+	background-image: url(../images/change_one/icbi_08.png);
+}
+.change_tree{
+	background-image: url(../images/change_one/change_tree.png); background-repeat: no-repeat; background-size:100% auto;height: 9.5rem;width: 7.5rem;
+}
+.change_tree1{
+	float: left;
+	margin-left: 4%;
+	width: 39%;
+	margin-top: 0.75rem;
+	font-size: 0.2rem;
+	line-height: 0.3rem;
+    color: #858585;
+}
+.change_tree2{
+	float: right;
+	margin-right: 4%;
+	width: 39%;
+	margin-top: 2.6rem;
+	font-size: 0.2rem;
+	line-height: 0.3rem;
+    color: #858585;
+}
+.change_tree3{
+	float: left;
+	margin-left: 4%;
+	width: 39%;
+	margin-top: 1.4rem;
+	font-size: 0.2rem;
+	line-height: 0.3rem;
+    color: #858585;
+}
+.change_tree4{
+	float: right;
+	margin-right: 4%;
+	width: 39%;
+	margin-top: 1.1rem;
+	font-size: 0.2rem;
+	line-height: 0.3rem;
+    color: #858585;
+}
+.change_tree5{
+	float: left;
+	margin-left: 4%;
+	width: 39%;
+	margin-top: 1.8rem;
+	font-size: 0.2rem;
+	line-height: 0.3rem;
+    color: #858585;
+}
+.teacher_but1 {
+    text-align: center;
+    padding-bottom: 0.1rem;
+}
+.teacher_but1 img{
+	width: 4.9rem;
+}
+.teacher_but{
+	text-align: center;
+	background: #f9f9f9;
+	padding-bottom: 0.1rem;
+}
+.teacher_but img{
+	width: 54%;
+}
+.change_pa1{
+	padding:0.1rem 0;
+	background: #f9f9f9;
+}
+.swiper_two {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #f9f9f9;
+}
+.swiper-slide_class {
+	padding: 3%;
+    text-align: center;
+    font-size: 18px;
+    background: #f9f9f9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide_class img{
+	width: 100%;
+}

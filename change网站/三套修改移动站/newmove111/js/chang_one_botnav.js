@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$('.botnavclick').click(function(){
+		if($('.botnav').css('display')=='none'){
+			$('.botnav').fadeIn(500);
+		}else{
+			$('.botnav').fadeOut(500);
+		}
+	})
+})

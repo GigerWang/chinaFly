@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+<link rel="stylesheet" href="css/111.css" />
+<style type="text/css">
+body{font-size:84%; color:#333333; line-height:1.4;}
+a{color:#34538b;}
+#Searchresult{width:300px; height:100px; padding:20px; background:#f0f3f9;}
+</style>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/fy.js"></script>
+<script type="text/javascript">
+$(function(){
+	//这是一个非常简单的demo实例，让列表元素分页显示
+	//回调函数的作用是显示对应分页的列表项内容
+	//回调函数在用户每次点击分页链接的时候执行
+	//参数page_index{int整型}表示当前的索引页
+	var initPagination = function() {
+		var num_entries = $("#hiddenresult div.result").length;
+		// 创建分页
+		$("#Pagination").pagination(num_entries, {
+			num_edge_entries: 1, //边缘页数
+			num_display_entries: 1, //主体页数
+			callback: pageselectCallback,
+			items_per_page:2, //每页显示1项
+			prev_text:"上一页"
+		});
+	 }();
+	 
+	function pageselectCallback(page_index, jq){
+		$("#Searchresult").html('');
+		for(var i=0;i<2;i++){
+			$("#Searchresult").append($("#hiddenresult div.result:eq("+(page_index*2+i)+")").clone()); 
+		}
+		return false;
+	}
+});
+</script>
+</head>
+
+<body>
+<h1>jQuery Pagination分页插件demo</h1>
+<div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
+<div id="Searchresult">分页初始化完成后这里的内容会被替换。</div>
+<div id="hiddenresult" style="display:none;">
+	<!-- 列表元素 -->
+    <div class="result">第1项内容</div>
+    <div class="result">第2项内容</div>
+    <div class="result">第3项内容</div>
+    <div class="result">第4项内容</div>
+    <div class="result">第5项内容</div>
+    <div class="result">第6项内容</div>
+    <div class="result">第7项内容</div>
+    <div class="result">第8项内容</div>
+</div>
+</body>
+</html>

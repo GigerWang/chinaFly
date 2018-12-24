@@ -1,0 +1,77 @@
+.change_p .change_p1{
+	padding: 0.2rem 0.2rem 0 0.2rem;
+}
+.fly_skip{
+	position: absolute;
+	right: 0.6rem;
+	bottom:0.3rem;
+	width: 3.2rem;
+	height: 0.3rem;
+}
+.change_span_one{
+	font-weight: bold;
+	color: black;
+}
+.change_try{
+	width: 20%;
+    float: left;
+    margin-left: 4%;
+    text-align: center;
+}
+.change_try img{
+	border-radius: 5px;
+}
+.change_cen{
+	text-align: center;
+}
+.change_pfont{
+	color: #c5c5c5;
+}
+.change_divp{
+    font-size: 0.24rem;
+    line-height: 0.35rem;
+    color: #858585;
+    padding:0 0.2rem;
+}
+.swiper_two {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #f9f9f9;
+}
+.teacher_but{
+	text-align: center;
+	background: #f9f9f9;
+	padding-bottom: 0.1rem;
+}
+.teacher_but img{
+	width: 54%;
+}
+
+
+
+.swiper-slide_class {
+	padding: 3%;
+    text-align: center;
+    font-size: 18px;
+    background: #f9f9f9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide_class img{
+	width: 100%;
+}
+.change_pa1{
+	padding:0.5rem 0;
+	background: #f9f9f9;
+}

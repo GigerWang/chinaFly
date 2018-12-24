@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "微软雅黑";
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+  	font-family: "微软雅黑";
+}
+a{
+  color: #DC965A;
+  text-decoration: none;
+  font-size: 0.16rem;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.content{
+	width: 7.5rem;
+	max-width: 750px;
+}
+.container{
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+}
+.remove_float{
+	clear: both;
+}
+/*.remove_over{
+	overflow: hidden;
+}*/
+.outermost{
+	z-index: 999;
+}
+.fum-img{
+	width: 100%;
+}
+.heione{
+	height: 0.2rem;
+	width: 100%;
+	background: #edecea;
+}
+.right_down{
+	animation:myfirst 2s;
+	-moz-animation:myfirst 2s; /* Firefox */
+	-webkit-animation:myfirst 2s; /* Safari and Chrome */
+	-o-animation:myfirst 2s; /* Opera */
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite; /* Safari 氓鈥�?Chrome */
+	}
+	@keyframes myfirst
+	{
+	0%   {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	50% {
+		transform: scale(0.8,0.8);
+		-ms-transform: scale(0.8,0.8);	/* IE 9 */
+		-webkit-transform: scale(0.8,0.8);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(0.8,0.8);	/* Opera */
+		-moz-transform: scale(0.8,0.8);	/* Firefox */
+	}
+	100% {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	}
+	
+	@-moz-keyframes myfirst /* Firefox */
+	{
+	0%   {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	50% {
+		transform: scale(0.8,0.8);
+		-ms-transform: scale(0.8,0.8);	/* IE 9 */
+		-webkit-transform: scale(0.8,0.8);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(0.8,0.8);	/* Opera */
+		-moz-transform: scale(0.8,0.8);	/* Firefox */
+	}
+	100% {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	}
+	
+	@-webkit-keyframes myfirst /* Safari and Chrome */
+	{
+	0%   {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	50% {
+		transform: scale(0.8,0.8);
+		-ms-transform: scale(0.8,0.8);	/* IE 9 */
+		-webkit-transform: scale(0.8,0.8);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(0.8,0.8);	/* Opera */
+		-moz-transform: scale(0.8,0.8);	/* Firefox */
+	}
+	100% {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	}
+	
+	@-o-keyframes myfirst /* Opera */
+	{
+	0%   {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	50% {
+		transform: scale(0.8,0.8);
+		-ms-transform: scale(0.8,0.8);	/* IE 9 */
+		-webkit-transform: scale(0.8,0.8);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(0.8,0.8);	/* Opera */
+		-moz-transform: scale(0.8,0.8);	/* Firefox */
+	}
+	100% {
+		transform: scale(1.0,1.0);
+		-ms-transform: scale(1.0,1.0);	/* IE 9 */
+		-webkit-transform: scale(1.0,1.0);	/* Safari 氓鈥�?Chrome */
+		-o-transform: scale(1.0,1.0);	/* Opera */
+		-moz-transform: scale(1.0,1.0);	/* Firefox */
+	}
+	}

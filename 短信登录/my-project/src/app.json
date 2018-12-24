@@ -1,5 +1,6 @@
 {
   "pages": [
+	"pages/personal/main",
 	"pages/temporary/main",
     "pages/index/main",
     "pages/logs/main",
@@ -24,7 +25,7 @@
 	        "text": "Hi"
 	      },
 	      {
-	        "pagePath": "pages/temporary/main",
+	        "pagePath": "pages/personal/main",
 	        "iconPath": "images/榜单.png",
 	        "selectedIconPath": "images/榜单2.png",
 	        "text": "Yeah"

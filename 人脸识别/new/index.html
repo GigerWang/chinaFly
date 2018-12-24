@@ -1,0 +1,214 @@
+<html>
+<head>
+    <title>Face++人脸融合Demo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    <div class="sk-wave-box">
+        <div class="sk-wave">
+            <div class="sk-rect sk-rect1"></div>
+            <div class="sk-rect sk-rect2"></div>
+            <div class="sk-rect sk-rect3"></div>
+            <div class="sk-rect sk-rect4"></div>
+            <div class="sk-rect sk-rect5"></div>
+        </div>
+        <span class="sk-word">正在上传中...</span>
+    </div>
+    <input type="hidden" value="" class="input-image" />
+    <div align="center">
+        <table>
+            <tr>
+                <td id="td_img">
+                    <img src='images/blank.jpg' class='uploadpic' id="uploadpic" />  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<p style="color: red;display: none;" class="save">长按图片保存到本地</p>
+                	<span class="fileinput-button">
+			            <span>上传图片</span>
+			            <input id="fileUpload" type="file" /><br />
+			        </span>
+                    <button type="button" class="button-make">开始生成</button>
+                    <select class="select-model">
+                          <option value="1">下拉选择模版：图一</option>
+                          <option value="2">图二</option>
+                          <option value="3">图三</option>
+                          <option value="4">图四</option>
+                          <option value="5">图五</option>
+                          <option value="6">图六</option>
+                          <option value="7">图七</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src='http://123.56.181.149/test_wg/kj/kj01.jpg' class='model-image' />  <br/>（模版图片）
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="image-holder"></div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/lib/crypto1/crypto/crypto.js"></script>
+    <script src="js/lib/crypto1/hmac/hmac.js"></script>
+    <script src="js/lib/crypto1/sha1/sha1.js"></script>
+    <script src="js/lib/base64.js"></script>
+    <script src="js/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
+    
+    <script type="text/javascript">
+    	
+        $('.select-model').change(function(){
+        	console.log($(this).val());
+            var strModel = 'http://123.56.181.149/test_wg/kj/kj0' + $(this).val() + '.jpg';
+            if($(this).val() == 0){
+                strModel = 'http://123.56.181.149/test_wg/kj/kj01.jpg';
+            }
+            $('.model-image').attr('src', strModel); 
+        }); 
+        
+        
+        
+			//将base64转换为blob
+			function dataURLtoBlob(dataurl) { 
+				var arr = dataurl.split(','),
+					mime = arr[0].match(/:(.*?);/)[1],
+					bstr = atob(arr[1]),
+					n = bstr.length,
+					u8arr = new Uint8Array(n);
+				while (n--) {
+					u8arr[n] = bstr.charCodeAt(n);
+				}
+				return new Blob([u8arr], { type: mime });
+			};
+			
+			//将blob转换为file
+			 function blobToFile(theBlob, fileName){
+			   theBlob.lastModifiedDate = new Date();
+			   theBlob.name = fileName;
+			   return theBlob;
+			};
+
+        
+						       	// 人脸融合接口函数
+						        $('.button-make').click(function(){
+						            if($('.input-image').val() == ''){
+						                alert('请上传图片');
+						                return false;
+						            }
+						            //调用
+								var blob = dataURLtoBlob($('.input-image').val());
+								var file = blobToFile(blob, "123.jpg");
+						            
+						            $('.sk-word').html('正在生成中...');
+						            $('.sk-wave-box').show();
+						
+						            var templateRectangle;
+						            switch($('.select-model').val()){
+						                case '0':
+						                    templateRectangle = "95, 319, 81, 78";
+						                    break;
+						                case '1':
+						                    templateRectangle = "95, 319, 81, 78";
+						                    break;
+						                case '2':
+						                    templateRectangle = "167, 325, 73, 75";
+						                    break;
+						                case '3':
+						                    templateRectangle = "164, 316, 133, 132";
+						                    break;
+						                case '4':
+						                    templateRectangle = "174, 298, 142, 139";
+						                    break;
+						                case '5':
+						                    templateRectangle = "162, 286, 128, 129";
+						                    break;
+						                case '6':
+						                    templateRectangle = "134, 314, 139, 140";
+						                    break;
+						                case '7':
+						                    templateRectangle = "162, 281, 130, 130";
+						                    break;
+						            }
+						            
+						            
+						            
+					
+//								alert(file);
+									
+									var formData = new FormData();   
+									//convertBase64UrlToBlob函数是将base64编码转换为Blob  
+									var api_key= "SEXNF6k2XH25nej7gzq55CE-Z7wNfrh_";
+									var api_secret= "c21mZXmDelXOiflIELfw9KXcm5QyWj2i";
+									var template_url= $('.model-image')[0].src;
+					
+									formData.append("api_key",api_key); 
+									formData.append("api_secret",api_secret); 
+									formData.append("template_url",template_url); 
+									formData.append("template_rectangle",templateRectangle); 
+									formData.append("merge_rate",100); 
+									formData.append("merge_file",file); 
+
+						            
+						         
+						                    $.ajax({
+								                type: 'POST' ,
+								                url: 'https://api-cn.faceplusplus.com/imagepp/v1/mergeface',
+								                data: formData,
+												processData : false,
+												contentType:false,				
+												
+								                success: function(response){ 
+//												  alert(response.result);
+								                     if(typeof(response.error_message) == "undefined"){
+								                    	console.log('haha',response.result)
+								                        // todo: 在这里添加生成后的逻辑，response.result 为生成图的base64
+								                        $('.uploadpic').attr('src', 'data:image/jpg/png;base64,' + response.result); 
+								                   		$('.save').css('display','block');
+								                     }else{
+								                        // todo: 在这里添加上传失败的逻辑
+								                        alert('请重新上传照片');
+								                    } 
+								                    // todo: 在这里添加隐藏上传提示图层的逻辑
+								                    $('.sk-wave-box').hide();
+								                },
+								                error: function(xhr, status, error){
+								                    console.log(xhr.responseText);
+								                    // todo: 在这里添加上传失败的逻辑
+								                    alert('请重新上传照片');
+								                    
+								                    // todo: 在这里添加隐藏上传提示图层的逻辑
+								                    $('.sk-wave-box').hide();
+								                }
+								            });  
+						        });
+						        
+						        
+ 		$("#fileUpload").on('change', function (e) {
+			    if (typeof (FileReader) != "undefined") {
+			        var image_holder = $("#td_img");
+			        
+//			        image_holder.empty();
+			        
+			        var reader = new FileReader();
+			        reader.onload = function (e) {
+			        	$('.uploadpic').attr('src',e.target.result)
+//			            $("<img />", {
+//			                "src": e.target.result,
+//			                "class": "uploadpic",
+//			                "id":"uploadpic"
+//			            }).appendTo(image_holder);
+			            $('.input-image').val(e.target.result);
+			        }
+			        image_holder.show();
+			        reader.readAsDataURL($(this)[0].files[0]);
+			    } else {
+			        alert("你的浏览器不支持FileReader.");
+			    }
+			});  
+
+    </script>
+</body>
+</html>
